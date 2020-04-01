@@ -1,0 +1,36 @@
+# Table of contents
+
+* [Introduction](README.md)
+* [Authorization](authorization/README.md)
+  * [API Management](authorization/management.md)
+  * [Signature](authorization/signature.md)
+  * [Code snippets](authorization/code-snippets.md)
+  * [Legacy](authorization/legacy.md)
+* [Environments](environments.md)
+* [Errors](errors.md)
+
+## References
+
+* [Deposits&Withdrawals](references/payment-process/README.md)
+  * [Initiate deposit request 🔒](references/payment-process/initiate-a-deposit-request.md)
+  * [Submit deposit data 🔒](references/payment-process/submit-deposit-data.md)
+  * [Get deposit data 🔒](references/payment-process/get-deposit-data.md)
+  * [Initiate withdrawal request 🔒](references/payment-process/initiate-withdrawal-request.md)
+  * [Validate address](references/payment-process/validate-address.md)
+  * [Change deposit status 🔒](references/payment-process/change-deposit-status.md)
+* [Callbacks](references/callbacks/README.md)
+  * [Deposit broadcast time](references/callbacks/deposit-broadcast-time.md)
+  * [Deposit received time](references/callbacks/deposit-received-time.md)
+  * [Deposit exchanged time](references/callbacks/deposit-exchanged-time.md)
+  * [Withdrawal broadcast time](references/callbacks/withdrawal-broadcast-time.md)
+* [Business](references/business/README.md)
+  * [Get business by ID 🔒](references/business/get-business-by-id.md)
+  * [Get business deposits 🔒](references/business/get-business-deposits.md)
+  * [Get business withdrawals 🔒](references/business/get-business-withdrawals.md)
+  * [Get business balance 🔒](references/business/get-business-balance.md)
+* [Currencies&Fees](references/currencies-and-fees/README.md)
+  * [Get all currencies](references/currencies-and-fees/get-all-currencies.md)
+  * [Get withdrawal fees](references/currencies-and-fees/untitled.md)
+  * [Get exchange rates \[single\]](references/currencies-and-fees/get-exchange-rates.md)
+  * [Get exchange rates \[multi\]](references/currencies-and-fees/get-exchange-rates-multi.md)
+
