@@ -16,6 +16,10 @@ An endpoint for initiating a payment deposit request. On success the client will
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
+{% api-method-parameter name="businessId" type="string" required=true %}
+Unique business identifier. **Optional for businessToken implementation**
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="expirationMinutes" type="number" required=false %}
 Indicates the timeframe in which the deposit should happen. A value of `0` will make the payment to not expire. Defaults to `30min`
 {% endapi-method-parameter %}

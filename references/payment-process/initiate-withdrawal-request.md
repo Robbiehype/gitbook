@@ -13,7 +13,7 @@ This endpoint allows to submit cryptocurrency withdrawals. The amount can be sel
 {% api-method-request %}
 {% api-method-body-parameters %}
 {% api-method-parameter name="businessId" type="string" required=true %}
-ID of the business from which the withdrawal should be executed
+ID of the business from which the withdrawal should be executed. **Optional for businessToken**
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="clientWithdrawalId" type="string" required=true %}
