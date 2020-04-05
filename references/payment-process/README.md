@@ -1,4 +1,4 @@
-# Deposits&Withdrawals
+# Deposits & Withdrawals
 
 ![](../../.gitbook/assets/component-75.png)
 

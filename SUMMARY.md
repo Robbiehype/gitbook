@@ -11,7 +11,7 @@
 
 ## References
 
-* [Deposits&Withdrawals](references/payment-process/README.md)
+* [Deposits & Withdrawals](references/payment-process/README.md)
   * [Initiate deposit request 🔒](references/payment-process/initiate-a-deposit-request.md)
   * [Submit deposit data 🔒](references/payment-process/submit-deposit-data.md)
   * [Get deposit data 🔒](references/payment-process/get-deposit-data.md)
@@ -28,7 +28,7 @@
   * [Get business deposits 🔒](references/business/get-business-deposits.md)
   * [Get business withdrawals 🔒](references/business/get-business-withdrawals.md)
   * [Get business balance 🔒](references/business/get-business-balance.md)
-* [Currencies&Fees](references/currencies-and-fees/README.md)
+* [Currencies & Fees](references/currencies-and-fees/README.md)
   * [Get all currencies](references/currencies-and-fees/get-all-currencies.md)
   * [Get withdrawal fees](references/currencies-and-fees/untitled.md)
   * [Get exchange rates \[single\]](references/currencies-and-fees/get-exchange-rates.md)
