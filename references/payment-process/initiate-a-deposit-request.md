@@ -10,12 +10,17 @@ Initiate a deposit request
 {% endapi-method-summary %}
 
 {% api-method-description %}
-An endpoint for initiating a payment deposit request. On success the client will receive an unique payment URL for the deposit process which can be served within the `iframe` provided in the response or in a proprietary application.
+An endpoint for initiating a payment deposit request. On success the client will receive an unique payment URL for the deposit process which can be served within the `iframe` provided in the response or in a proprietary application.  
+Alternatively you can redirect to the payment link and supply a `redirectUrl` to navigate back to your website upon payment completion. We also supply a button which the customer can use to manually redirect back on the merchant site.
 {% endapi-method-description %}
 
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
+{% api-method-parameter name="redirectUrl" type="string" required=false %}
+Redirect a customer back to a specific URL upon payment completion. 
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="businessId" type="string" required=true %}
 Unique business identifier. **Optional for businessToken implementation**
 {% endapi-method-parameter %}
