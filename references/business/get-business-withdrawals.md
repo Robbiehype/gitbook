@@ -60,7 +60,7 @@ Withdrawals fetched successfully
       "clientWithdrawId": "MyFirstWithdrawal",
       "recipientAddress": "0x394d1b8b60ddb88bf7399322ce1c1208bef8a222",
       "transactionId": "0xbefa34b2fd2dfc9a4810a0dab4edc53b3f950f9eb69bb1e53748c3bf7b082795",
-      "initiatedBy": "http://gateway.finrax.test",
+      "initiatedBy": "https://gateway.finrax.com",
       "status": "COMPLETED",
       "displayCurrency": "USD",
       "withdrawCurrency": "POWR",
