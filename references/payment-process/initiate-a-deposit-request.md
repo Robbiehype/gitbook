@@ -101,7 +101,8 @@ Invalid request body
 | paymentId | string | Unique payment identifier within Finrax system `UUID` |
 | paymentInitiatedAt | number | Timestamp when the payment got created `UNIX` |
 | status | string | Status of the payment |
-| paymentUrl | string | A unique payment URL which could be used to serve the Finrax checkout page. |
+| paymentUrl | string | A unique payment URL which could be used to serve the Finrax checkout page |
+| redirectUrl | string | A specific URL the customer will be redirected to upon payment completion |
 
 
 
