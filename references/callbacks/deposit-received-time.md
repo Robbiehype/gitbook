@@ -8,7 +8,7 @@ Once the transaction is added in a block and there is 1 blockchain confirmation,
 {  
 "actualDepositAmount":0.20915278,
 "actualDisplayAmount":14.01,
-"clientPaymentId":"test-awaiting-ltc-2",
+"clientPaymentId":"test-ltc-2",
 "depositAddress":"MT2dMnj3eH2PabKA4ZH4RYQdWAaMkoXbTq",
 "depositCurrency":"LTC",
 "displayCurrency":"EUR",
