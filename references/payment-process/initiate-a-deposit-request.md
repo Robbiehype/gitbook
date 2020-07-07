@@ -22,7 +22,7 @@ Redirect a customer back to a specific URL upon payment completion.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="businessId" type="string" required=true %}
-Unique business identifier. **Optional for businessToken implementation**
+**UUID** Unique business identifier. Optional for businessToken implementation
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="expirationMinutes" type="number" required=false %}
