@@ -1,4 +1,4 @@
-# Business
+# Businesses
 
 At Finrax you can create multiple businesses within one organisation unit. This allows merchants with multiple brands to manage easily all their payment needs within one environment.
 

@@ -1,6 +1,6 @@
 # Environments
 
-### Servers:
+### Base endpoints:
 
 * Sandbox environment: **https://sandbox-payments.finrax.com**
 * Production environment: **https://payments.finrax.com**

@@ -23,7 +23,7 @@
   * [Deposit received time](references/callbacks/deposit-received-time.md)
   * [Deposit exchanged time](references/callbacks/deposit-exchanged-time.md)
   * [Withdrawal broadcast time](references/callbacks/withdrawal-broadcast-time.md)
-* [Business](references/business/README.md)
+* [Businesses](references/business/README.md)
   * [Get business by ID 🔒](references/business/get-business-by-id.md)
   * [Get business deposits 🔒](references/business/get-business-deposits.md)
   * [Get business withdrawals 🔒](references/business/get-business-withdrawals.md)

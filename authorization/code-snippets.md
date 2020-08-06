@@ -1,3 +1,7 @@
+---
+description: Example code snippets fo signing and sending requests
+---
+
 # Code snippets
 
 {% tabs %}
@@ -24,7 +28,7 @@ class Finrax
         $ch = curl_init();
         $jsonBody = '';
         if ($method == 'POST' || $method == 'PUT' || $method == 'PATCH') {
-            $jsonBody = json_encode($body);
+            $jsonBody = json_encode($body, JSON_UNESCAPED_SLASHES);
             curl_setopt($ch, CURLOPT_POSTFIELDS, $jsonBody);
         }
         curl_setopt_array($ch, [
@@ -63,14 +67,17 @@ const Headers = fetch.Headers;
 const API_KEY = process.env.API_KEY;
 const API_SECRET = process.env.API_SECRET;
 const BASE_URL = process.env.BASE_URL || 'https://sandbox-payments.finrax.com';
+
 function buildAuthorizationHeaderValue(path, jsonBody = '') {
     let timestamp = Date.now();
     let signaturePayload = path + timestamp + jsonBody;
     let signature = CryptoJS.HmacSHA256(signaturePayload, API_SECRET);
+    
     return `FRX-API API-Key=${API_KEY},` +
         `Signature=${signature},` +
         `Timestamp=${timestamp}`;
 }
+
 function stringifyBody(jsonBody) {
     if (typeof jsonBody === 'string') {
         if (jsonBody === '') {
@@ -80,8 +87,10 @@ function stringifyBody(jsonBody) {
     } else {
         jsonBody = JSON.stringify(jsonBody);
     }
+    
     return jsonBody;
 }
+
 function buildRequestOptions(method, path, jsonBody) {
     let requestOptions = {};
     let body = '';
@@ -89,17 +98,21 @@ function buildRequestOptions(method, path, jsonBody) {
         body = stringifyBody(jsonBody);
         requestOptions.body = body;
     }
+    
     let authorizatonHeader = buildAuthorizationHeaderValue(path, body);
     let headers = new Headers();
     headers.append('Authorization', authorizatonHeader);
     headers.append('Content-type', 'application/json');
     requestOptions.method = method;
     requestOptions.headers = headers;
+    
     return requestOptions;
 }
+
 function makeRequest(method, path, jsonBody = '') {
     let url = BASE_URL + path;
     let requestOptions = buildRequestOptions(method, path, jsonBody);
+    
     fetch(url, requestOptions)
         .then(response => response.text())
         .then(result => console.log(result))

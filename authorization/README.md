@@ -1,5 +1,5 @@
 ---
-description: This section outlines the Finrax API's authorization scheme
+description: The Finrax API's authorization scheme
 ---
 
 # Authorization
