@@ -6,21 +6,21 @@ Once the end user sends funds from his wallet, a record will be broadcast on the
 
 ```javascript
 {  
-"actualDepositAmount":0.20915278,
-"actualDisplayAmount":13.99,
-"clientPaymentId":"MyFirstDeposit",
-"depositAddress":"MT2dMnj3eH2PabKA4ZH4RYQdWAaMkoXbTq",
-"depositCurrency":"LTC",
-"displayCurrency":"EUR",
-"expectedDepositAmount":0.21015278,
-"expectedDisplayAmount":14.00,
-"expirationTime":1566743563,
-"onChainFee":0.00074800,
-"paymentId":"aa77329f-bddb-4ab7-8128-9a9b1a116113",
-"status":"UNCONFIRMED",
-"paymentReceivedAt":1566742859,
-"paymentRequestedAt":1566741899,
-"transactionId":"900420600c0bd373e30043089d206d919c1fca6495c4a740f42b3803daa5b980"
+    "actualDepositAmount":0.20915278,
+    "actualDisplayAmount":13.99,
+    "clientPaymentId":"MyFirstDeposit",
+    "depositAddress":"MT2dMnj3eH2PabKA4ZH4RYQdWAaMkoXbTq",
+    "depositCurrency":"LTC",
+    "displayCurrency":"EUR",
+    "expectedDepositAmount":0.21015278,
+    "expectedDisplayAmount":14.00,
+    "expirationTime":1566743563,
+    "onChainFee":0.00074800,
+    "paymentId":"aa77329f-bddb-4ab7-8128-9a9b1a116113",
+    "status":"UNCONFIRMED",
+    "paymentReceivedAt":1566742859,
+    "paymentRequestedAt":1566741899,
+    "transactionId":"900420600c0bd373e30043089d206d919c1fca6495c4a740f42b3803daa5b980"
 }
 ```
 
