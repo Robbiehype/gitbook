@@ -1,12 +1,10 @@
 ---
-description: Finrax REST API authorization schema
+description: This section outlines the Finrax API's authorization scheme
 ---
 
 # Authorization
 
-### How does it work?
-
-Finrax REST API uses standard HTTP Authorization header to pass authentication information. Under the  authentication scheme, this header has the following form:
+When authorizing against the Finrax REST API, one must provide a standard HTTP `Authorization` header in the following format:
 
 ```aspnet
 'Authorization: FRX-API api-key=<your_api_key>,
@@ -14,14 +12,14 @@ Finrax REST API uses standard HTTP Authorization header to pass authentication i
                         timestamp=<unix_timestamp>'
 ```
 
-API credentials consist of an **API key** and an **API secret,** forming a pair together. The key must be passed with each request in the Authorization header’s API-Key component and the **API secret** is used for the generation of the [Signature](signature.md) component.  
-The **Timestamp** component must be an integer value representing the current UNIX epoch time in milliseconds.
+[API credentials](management.md) consist of an **API key** and an **API secret,** forming a pair together. The key must be passed with each request in the Authorization header’s API-Key component and the **API secret** is used for the generation of the [Signature](signature.md) component.  
+The **Timestamp** component must be an integer value representing the current [UNIX epoch time](https://www.unixtimestamp.com/) in milliseconds.
 
 {% hint style="info" %}
-**All signed requests are labeled with this icon 🔒**
+**All requests that require authorization are labelled with this icon 🔒**
 {% endhint %}
 
 {% hint style="warning" %}
-**Existing integrators please refer to the** [**Legacy**](legacy.md) **section.**
+**API consumers that still rely on the legacy business tokens, please refer to** [**this section**](legacy.md)**.**
 {% endhint %}
 

@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
 * [Authorization](authorization/README.md)
-  * [API Management](authorization/management.md)
+  * [API Keys Management](authorization/management.md)
   * [Signature](authorization/signature.md)
   * [Code snippets](authorization/code-snippets.md)
   * [Legacy](authorization/legacy.md)
