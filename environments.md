@@ -6,7 +6,7 @@
 * Production environment: **https://payments.finrax.com**
 
 {% hint style="info" %}
-Bear in mind that the sandbox version operate with the real blockchain in order to provide complete replica of the production environment.
+Bear in mind that the sandbox version operates with the real blockchain in order to provide a complete replica of the production environment.
 {% endhint %}
 
 

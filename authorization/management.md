@@ -13,7 +13,7 @@ Due to security concerns, we also require IPs to be whitelisted. If we receive a
 
 Upon successful API credentials creation, you will be provided with the values for the **API key** and **API secret**. At this stage, you **must store the API secret securely**, e.g. by writing it down or copying it in a trusted store as this is the only time the API secret will be displayed.   
   
-Once created the API key and secret are immutable, however, the IP white-list and permissions can be editted at any time.  
+Once created the API key and secret are immutable, however, the IP white-list and permissions can be edited at any time.  
 
 
 {% hint style="danger" %}

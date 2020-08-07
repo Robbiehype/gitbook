@@ -11,7 +11,7 @@ In order to start making requests to the API, you must first create a business i
 ![](../.gitbook/assets/screenshot-2020-03-19-at-13.34.48.png)
 
 {% hint style="danger" %}
-**Finrax will continue to support this legacy authentication scheme for a while but we plan to deprecate it in Q3 2020. New integrators are strongly adviced to use the** [**API key & secret**](management.md) **instead.**
+**Finrax will continue to support this legacy authentication scheme for a while but we plan to deprecate it in Q3 2020. New integrators are strongly advised to use the** [**API key & secret**](management.md) **instead.**
 {% endhint %}
 
 {% hint style="warning" %}

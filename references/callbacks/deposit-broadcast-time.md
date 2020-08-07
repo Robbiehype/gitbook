@@ -19,6 +19,7 @@ The first event is sent as soon as we _see_ a new deposit transfer broadcasted o
     "expirationTime":1566743563,
     "onChainFee":0.00074800,
     "paymentId":"aa77329f-bddb-4ab7-8128-9a9b1a116113",
+    "depositId":"95b15c4b-97df-3565-92b6-5006b9a264ea",
     "status":"UNCONFIRMED",
     "paymentReceivedAt":1566742859,
     "paymentRequestedAt":1566741899,
