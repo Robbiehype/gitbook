@@ -17,7 +17,7 @@ Once created the API key and secret are immutable, however, the IP white-list an
 
 
 {% hint style="danger" %}
-**If you lose your API secret or it becomes compromised you must delete the API credentials pair immediately and generate a new one.**
+**If you lose your API secret or it becomes compromised you must delete the API credentials pair immediately and generate a new one. If you find out that the access to the dashboard has been compromised, please contact us immediately.**
 {% endhint %}
 
 
