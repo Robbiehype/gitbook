@@ -34,52 +34,52 @@ Withdrawal fees fetched successfully
 {
 "displayCurrency": "EUR",
 "fees": [
-{
-"withdrawFee": "0.01",
-"displayWithdrawFee": "0.0005",
-"withdrawCurrency": "XLM",
-"withdrawAvailable": true,
-"withdrawPrecision": 7
-},
-{
-"withdrawFee": "6818",
-"displayWithdrawFee": "1.5807",
-"withdrawCurrency": "NPXS",
-"withdrawAvailable": true,
-"withdrawPrecision": 8
-},
-{
-"withdrawFee": "1.02",
-"displayWithdrawFee": "0.9141",
-"withdrawCurrency": "PAX",
-"withdrawAvailable": true,
-"withdrawPrecision": 8
-},
-{
-"withdrawFee": "1.26",
-"displayWithdrawFee": "0.8550",
-"withdrawCurrency": "OMG",
-"withdrawAvailable": true,
-"withdrawPrecision": 8
-},
-...
-...
-...
-{
-"withdrawFee": "660",
-"displayWithdrawFee": "0.8671",
-"withdrawCurrency": "KEY",
-"withdrawAvailable": true,
-"withdrawPrecision": 8
-},
-{
-"withdrawFee": "2236",
-"displayWithdrawFee": "1.3824",
-"withdrawCurrency": "HOT",
-"withdrawAvailable": true,
-"withdrawPrecision": 8
-}
-]
+    {
+        "withdrawFee": "0.01",
+        "displayWithdrawFee": "0.0005",
+        "withdrawCurrency": "XLM",
+        "withdrawAvailable": true,
+        "withdrawPrecision": 7
+    },
+    {
+        "withdrawFee": "6818",
+        "displayWithdrawFee": "1.5807",
+        "withdrawCurrency": "NPXS",
+        "withdrawAvailable": true,
+        "withdrawPrecision": 8
+    },
+    {
+        "withdrawFee": "1.02",
+        "displayWithdrawFee": "0.9141",
+        "withdrawCurrency": "PAX",
+        "withdrawAvailable": true,
+        "withdrawPrecision": 8
+    },
+    {
+        "withdrawFee": "1.26",
+        "displayWithdrawFee": "0.8550",
+        "withdrawCurrency": "OMG",
+        "withdrawAvailable": true,
+        "withdrawPrecision": 8
+    },
+    ...
+    ...
+    ...
+    {
+        "withdrawFee": "660",
+        "displayWithdrawFee": "0.8671",
+        "withdrawCurrency": "KEY",
+        "withdrawAvailable": true,
+        "withdrawPrecision": 8
+    },
+    {
+    "withdrawFee": "2236",
+    "displayWithdrawFee": "1.3824",
+    "withdrawCurrency": "HOT",
+    "withdrawAvailable": true,
+    "withdrawPrecision": 8
+    }
+ ]
 }
 ```
 {% endapi-method-response-example %}

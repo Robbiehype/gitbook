@@ -1,6 +1,6 @@
 # Deposit received time
 
-Once the transaction is added in a block and there is 1 blockchain confirmation, we trigger a callback notification on your registered endpoint with status `CONFIRMED` For larger amounts we suggest using this callback instead of the one at broadcast time
+The second type of event is sent once the transaction is added in a block and there is 1 blockchain confirmation, we trigger a callback notification on your registered endpoint with status `CONFIRMED` All coins support this event.
 
 > This callback notification is sent on your `depositReceivedCallbackUrl` endpoint.
 
@@ -25,7 +25,7 @@ Once the transaction is added in a block and there is 1 blockchain confirmation,
 ```
 
 {% hint style="info" %}
-The networks of some coins like `XRP` and `XLM` are extremely fast. It takes literally ~1 second to verify and confirm a transaction once it's broadcast on the network. Therefore we don't send 2 subsequent callback notifications to avoid any race conditions with `UNCONFIRMED` and `CONFIRMED` status, but rather send just the one with `CONFIRMED` status. 
+The networks of some coins like `XRP` and `XLM` are extremely fast. It takes literally ~1 second to verify and confirm a transaction once it's broadcast on the network. 
 {% endhint %}
 
 

@@ -6,7 +6,7 @@ Get deposit data
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Get payment details for a specific payment ID. Finrax payment ID is provided as a response of POST `/payments`
+Get payment details for a specific payment ID. Finrax payment ID is provided in the response of POST `/payments`
 {% endapi-method-description %}
 
 {% api-method-spec %}

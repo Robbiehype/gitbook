@@ -6,7 +6,7 @@ Validate address
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Allows to check if wallet address is valid. Works well prior to executing a withdrawal request
+An endpoint for checking if a wallet address is valid according to the coin-specific format.
 {% endapi-method-description %}
 
 {% api-method-spec %}

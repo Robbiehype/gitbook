@@ -2,11 +2,11 @@
 
 
 
-Finrax sends 4 types of callback notifications on your predefined endpoints of your business. This is a high-level overview on how and when you can use the callback notifications
+Finrax sends 4 types of callback notifications on your predefined endpoints that you can set when creating [your business](https://blog.finrax.com/guides/how-to-create-a-business). This is a high-level overview on how and when you can use the callback notifications
 
-*  `depositReceivedCallbackUrl` Receives callback at deposit broadcast and received time \(e.g. once the transaction is broadcast on the blockchain and at 1 blockchain confirmation\)
-*  `depositExchangedCallbackUrl` Receives callback at deposit exchanged time \(The time at which the deposit got exchanged into your desired settlement currency\)
-* `withdrawalCallbackUrl`Callback sent when a withdrawal is successfully broadcast on the blockchain
+*  `depositReceivedCallbackUrl` Receives callback when the deposit has been seen \(broadcasted\) on the blockchain, as well as when the deposit has been confirmed on the blockchain
+*  `depositExchangedCallbackUrl` Receives callback when the deposit funds got exchanged into your desired settlement currency\)
+* `withdrawalCallbackUrl` Receives a callback when a withdrawal transaction was successfully broadcasted on the blockchain
 
 ![Callback requests timeline](../../.gitbook/assets/macbook-pro-1%20%281%29.png)
 

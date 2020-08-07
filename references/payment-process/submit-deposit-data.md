@@ -15,7 +15,7 @@ Submit deposit data
 {% endapi-method-summary %}
 
 {% api-method-description %}
-In case you'd like to spin off your own UI, this endpoint allows you to submit the details from the end-user for the initiated deposit request. The end-user will be required to choose a `depositCurrency` i.e. the cryptocurrency he wants to deposit with. Once the request is submitted the end-user will be supplied with `walletAddress` and the `expectedDepositAmount` calculated on the most recent exchange rate.
+In case you'd like to spin off your own UI, this endpoint allows you to submit the details from the end-user for the initiated deposit request. The end-user will be required to choose a `depositCurrency` i.e. the cryptocurrency they want to deposit in. Once the request is submitted, the end-user will be supplied with a `walletAddress` and the `expectedDepositAmount` calculated using the most recent exchange rate.
 {% endapi-method-description %}
 
 {% api-method-spec %}

@@ -6,7 +6,7 @@ Initiate withdrawal request
 {% endapi-method-summary %}
 
 {% api-method-description %}
-This endpoint allows to submit cryptocurrency withdrawals. The amount can be selected either in `fiat` or `crypto` which is being defined by the `targetAmountPolicy`
+An endpoint for initiating cryptocurrency withdrawals. The amount can be selected either in `fiat` or `crypto` which is being defined by the `targetAmountPolicy`
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -78,15 +78,15 @@ Withdrawal request created successfully
 {% hint style="info" %}
 ### What is `targetAmountPolicy?`
 
-The `targetAmountPolicy` field provides the means for specifying the withdrawal amount either in `FIAT` currency or `CRYPTO` currency. When `FIAT` is selected as policy the resulting amount of the withdrawal will be calculated according to the fiat amount passed in `targetAmount` field. When `CRYPTO` is selected as policy the resulting amount of the withdrawal will be exactly the same as the amount passed in `targetAmount` field \(or with a little difference depending on market conditions i.e. market step size\)
+The `targetAmountPolicy`field provides the means for specifying the withdrawal amount either in `FIAT` currency or `CRYPTO` currency. When `FIAT` is selected as policy the resulting amount of the withdrawal in crypto will be calculated according to the fiat amount passed in `targetAmount` field. When `CRYPTO` is selected as policy the resulting amount of the withdrawal will be exactly the same as the amount passed in `targetAmount` field \(subject to a negligible difference due to market conditions i.e. market step size\)
 {% endhint %}
 
 ```javascript
 {
-'withdrawCurrency': 'XRP',
-'displayCurrency': 'EUR',
-'targetAmount': '20',
-'targetAmountPolicy': 'FIAT'
+    'withdrawCurrency': 'XRP',
+    'displayCurrency': 'EUR',
+    'targetAmount': '20',
+    'targetAmountPolicy': 'FIAT'
 }
 
 //This translates to "Withdraw 20 EUR worth of XRP"
@@ -94,10 +94,10 @@ The `targetAmountPolicy` field provides the means for specifying the withdrawal 
 
 ```javascript
 {
-'withdrawCurrency': 'XRP',
-'displayCurrency': 'EUR',
-'targetAmount': '200',
-'targetAmountPolicy': 'CRYPTO'
+    'withdrawCurrency': 'XRP',
+    'displayCurrency': 'EUR',
+    'targetAmount': '200',
+    'targetAmountPolicy': 'CRYPTO'
 }
 
 //This translates to "Withdraw 200 XRP"

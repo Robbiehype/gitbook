@@ -1,8 +1,10 @@
 # Deposit broadcast time
 
-Once the end user sends funds from his wallet, a record will be broadcast on the blockchain. We listen for blockchain events and as soon as we _see_ a new transfer on the designated wallet address, we trigger a callback notification on your endpoint. The status of this transaction is `UNCONFIRMED` We run internal algorithms to make sure that it will not result in a [double spent attempt](https://coinsutra.com/bitcoin-double-spending/). However we suggest putting a threshold on the amounts you are willing to credit while still in `UNCONFIRMED`status.
+Once the end user sends funds from their wallet, a transaction-specific events will be broadcasted on the blockchain. We listen for such blockchain events and will send them to you via an endpoint provided by you when creating your business through the dashboard. There are two types of block-chain events that we propagate to you:  
+  
+The first event is sent as soon as we _see_ a new deposit transfer broadcasted on the designated wallet address. At this stage the status of the transaction is still `UNCONFIRMED` We run an internal probabilistic algorithm to help us identify [double spent attempts](https://coinsutra.com/bitcoin-double-spending/) or illicit transactions. If we detect such a case we won't propagate this event to you systemically and will instead contact you about it. Note that only UTXO-based coins \(BTC, LTC, BCH etc..\) have such an event, whereas account-based coins \(ETH, ERC20, XLM, XRP\) don't .
 
-> This callback notification is sent on your `depositReceivedCallbackUrl` endpoint
+> The following callback notification will be sent on your `depositReceivedCallbackUrl` endpoint
 
 ```javascript
 {  
