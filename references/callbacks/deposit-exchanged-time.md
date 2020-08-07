@@ -1,6 +1,6 @@
 # Deposit exchanged time
 
-The key value of using Finrax Payment Gateway is its fast exchange time and fair exchange rates. We aim to exchange all deposits in under 1 minute after it has been received. In addition once the exchange happens we trigger a callback notification to inform you about the settlement amount that you can later withdraw. 
+The key value of using Finrax Payment Gateway is its fast exchange time and fair exchange rates. We aim to exchange all deposits in under 1 minute after it has been received. In addition, once the exchange happens we trigger a callback notification to inform you about the settlement amount that you can later withdraw. 
 
 > This callback notification is sent on your `depositExchangedCallbackUrl` endpoint.
 
@@ -17,6 +17,7 @@ The key value of using Finrax Payment Gateway is its fast exchange time and fair
   "expectedDepositAmount": 0.00258097,
   "paymentExchangedAt": 1579169466,
   "paymentId": "0d408fb3-8d57-430d-890d-090740b7cd03",
+   "depositId":"95b15c4b-97df-3565-92b6-5006b9a264ea",
   "paymentReceivedAt": 1579169399,
   "settlementCurrency": "EUR",
   "settlementExchangedAmount": 17.92,
