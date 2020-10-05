@@ -1,12 +1,12 @@
-# Get withdrawal fees
+# Get withdrawal \(on-chain\) fees
 
 {% api-method method="get" host="https://payments.finrax.com" path="/api/v1/fees/withdraw/:coin" %}
 {% api-method-summary %}
-Get withdrawal fees
+Get withdrawal \(on-chain\) fees
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Allows you to get the current withdrawal fees. You can add queries to display the fees in fiat currency.
+Finrax does not cover the associated on-chain fees for crypto withdrawals. This endpoint allows you to get the current on-chain fees. You can add queries to display the fees in fiat currency.
 {% endapi-method-description %}
 
 {% api-method-spec %}
