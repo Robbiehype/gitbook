@@ -1,6 +1,8 @@
 # Deposit exchanged time
 
-The key value of using Finrax Payment Gateway is its fast exchange time and fair exchange rates. We aim to exchange all deposits in under 1 minute after it has been received. In addition, once the exchange happens we trigger a callback notification to inform you about the settlement amount that you can later withdraw. 
+The key value of using Finrax Payment Gateway is its fast exchange time and fair exchange rates. We aim to exchange all deposits in under 1 minute after it has been received. In addition, once the exchange happens we trigger a callback notification to inform you about the settlement amount that you can later withdraw.   
+  
+The `transactionId` is optional in the context of fiat payments.
 
 > This callback notification is sent on your `depositExchangedCallbackUrl` endpoint.
 

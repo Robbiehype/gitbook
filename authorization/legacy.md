@@ -17,13 +17,13 @@ In order to start making requests to the API, you must first create a business i
 {% hint style="warning" %}
 **Currently, authenticated endpoints supporting the legacy schema are:**
 
-[**Initiate deposit request**](../references/payment-process/initiate-a-deposit-request.md)\*\*\*\*
+[**Initiate deposit request**](../references/crypto-payments/initiate-a-crypto-payment-request.md)\*\*\*\*
 
-\*\*\*\*[**Submit deposit data**](../references/payment-process/submit-deposit-data.md)\*\*\*\*
+\*\*\*\*[**Submit deposit data**](../references/crypto-payments/submit-deposit-data.md)\*\*\*\*
 
 [**Initiate withdrawal request**](../references/payment-process/initiate-withdrawal-request.md)\*\*\*\*
 
-\*\*\*\*[**Get deposit data**](../references/payment-process/get-deposit-data.md)\*\*\*\*
+\*\*\*\*[**Get deposit data**](../references/crypto-payments/get-deposit-data.md)\*\*\*\*
 
 \*\*\*\*[**Get business by ID**](../references/business/get-business-by-id.md)
 {% endhint %}

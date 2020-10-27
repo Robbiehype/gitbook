@@ -1,6 +1,8 @@
 # Deposit received time
 
-The second type of event is sent once the transaction is added in a block and there is 1 blockchain confirmation, we trigger a callback notification on your registered endpoint with status `CONFIRMED` All coins support this event.
+The second type of event is sent once the transaction is added in a block and there is 1 blockchain confirmation, we trigger a callback notification on your registered endpoint with status `CONFIRMED` All coins support this event. 
+
+This notification is also sent for \(fiat\) card payments - for such payments, the notification is sent once the card of the payer has been charged. The `transactionId` is optional in the context of fiat payments.
 
 > This callback notification is sent on your `depositReceivedCallbackUrl` endpoint.
 

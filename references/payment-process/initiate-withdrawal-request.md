@@ -1,4 +1,4 @@
-# Initiate withdrawal request 🔒
+# 🔒 Request crypto withdrawal
 
 {% api-method method="post" host="https://payments.finrax.com" path="/api/v1/withdrawals" %}
 {% api-method-summary %}
