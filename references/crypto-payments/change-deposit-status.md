@@ -1,4 +1,4 @@
-# 🔒 Change deposit status
+# 🔒 Change paymen status
 
 ![](../../.gitbook/assets/component-86.png)
 
