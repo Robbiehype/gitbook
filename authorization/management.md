@@ -9,7 +9,7 @@ API credentials can be managed directly from the [Finrax Dashboard](https://dash
 Due to security concerns, we also require IPs to be whitelisted. If we receive a request from an IP that was not listed for the API pair, we will reject it returning a 401 \(Unauthorized\) HTTP status code.  
 
 
-![](../.gitbook/assets/jun-24-2020-13-42-54.gif)
+![](../.gitbook/assets/api-keys-creation.gif)
 
 Upon successful API credentials creation, you will be provided with the values for the **API key** and **API secret**. At this stage, you **must store the API secret securely**, e.g. by writing it down or copying it in a trusted store as this is the only time the API secret will be displayed.   
   
