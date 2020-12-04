@@ -1,4 +1,4 @@
-# Get withdrawal \(on-chain\) fees
+# Get withdrawal \(on-chain\) fees & minimum withdrawal amounts
 
 {% api-method method="get" host="https://payments.finrax.com" path="/api/v1/fees/withdraw/:coin" %}
 {% api-method-summary %}

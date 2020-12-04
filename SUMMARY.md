@@ -32,7 +32,7 @@
   * [Withdrawal broadcast time](references/callbacks/withdrawal-broadcast-time.md)
 * [Currencies & Fees](references/currencies-and-fees/README.md)
   * [Get all currencies](references/currencies-and-fees/get-all-currencies.md)
-  * [Get withdrawal \(on-chain\) fees](references/currencies-and-fees/untitled.md)
+  * [Get withdrawal \(on-chain\) fees & minimum withdrawal amounts](references/currencies-and-fees/untitled.md)
   * [Get exchange rates \[single\]](references/currencies-and-fees/get-exchange-rates.md)
   * [Get exchange rates \[multi\]](references/currencies-and-fees/get-exchange-rates-multi.md)
 
