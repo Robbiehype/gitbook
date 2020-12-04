@@ -2,11 +2,11 @@
 
 {% api-method method="get" host="https://payments.finrax.com" path="/api/v1/fees/withdraw/:coin" %}
 {% api-method-summary %}
-Get withdrawal \(on-chain\) fees
+Get withdrawal \(on-chain\) fees & minimum withdrawal amounts
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Finrax does not cover the associated on-chain fees for crypto withdrawals. This endpoint allows you to get the current on-chain fees. You can add queries to display the fees in fiat currency.
+Finrax does not cover the associated on-chain fees for crypto withdrawals. This endpoint allows you to get the current on-chain fees and minimum withdrawal amounts per coin. You can add a query param to display the fees and minimum amounts in fiat currency.
 {% endapi-method-description %}
 
 {% api-method-spec %}
