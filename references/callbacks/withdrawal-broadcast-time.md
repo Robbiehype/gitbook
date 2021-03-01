@@ -1,6 +1,6 @@
 # Withdrawal broadcast time
 
-Currently, we support 50+ cryptocurrencies as a payout option. Once you initiate a withdrawal we need to take care of a couple of things before we successfully broadcast it to the network.
+Currently, we support 20+ cryptocurrencies as a payout option. Once you initiate a withdrawal we need to take care of a couple of things before we successfully broadcast it to the network.
 
 > This callback notification is sent on your `withdrawalCallbackUrl` endpoint.
 
