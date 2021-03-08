@@ -13,11 +13,11 @@ Get the most recent exchange rates for single cryptocurrency.
 {% api-method-request %}
 {% api-method-query-parameters %}
 {% api-method-parameter name="fromCurrency" type="string" required=true %}
-Expects supported cryptocurrency such as \(BTC, ETH , XRP, etc.\)
+Expects supported cryptocurrency such as \(BTC, ETH , XRP, etc.\). Supports multiple comma delimited values.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="toCurrency" type="string" required=true %}
-Expects supported fiat currency such as \(EUR, USD, GBP, etc.\)
+Expects supported fiat currency such as \(EUR, USD, GBP, etc.\). Supports multiple comma delimited values.
 {% endapi-method-parameter %}
 {% endapi-method-query-parameters %}
 {% endapi-method-request %}
@@ -25,14 +25,23 @@ Expects supported fiat currency such as \(EUR, USD, GBP, etc.\)
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-GET /api/v1/rates/9b5cf38d-9490-4131-9fa5-3626d761cbd6/btc\_eur
+https://payments.finrax.com/api/v1/exchange/rates/deposit?fromCurrency=BTC,ETH,XRP&toCurrency=EUR,USD
 {% endapi-method-response-example-description %}
 
 ```javascript
 {
-    "base": "BTC",
-    "quote": "EUR",
-    "price": 4681.89317678
+"ETH": {
+"EUR": "1467.8",
+"USD": "1741.1"
+},
+"BTC": {
+"EUR": "42798",
+"USD": "50770"
+},
+"XRP": {
+"EUR": "0.40227",
+"USD": "0.4772"
+}
 }
 ```
 {% endapi-method-response-example %}
