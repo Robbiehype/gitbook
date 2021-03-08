@@ -12,7 +12,7 @@ Allows you to fetch all withdrawals for a business
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-query-parameters %}
-{% api-method-parameter name="businessId" type="string" required=false %}
+{% api-method-parameter name="businessId" type="string" required=true %}
 Unique business identifier `UUID`
 {% endapi-method-parameter %}
 
