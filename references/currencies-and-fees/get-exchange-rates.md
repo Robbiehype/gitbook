@@ -6,18 +6,18 @@ Get exchange rates
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Get the most recent exchange rates for single cryptocurrency.
+Get the most recent exchange rates for cryptocurrencies vs. fiat currencies.
 {% endapi-method-description %}
 
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-query-parameters %}
 {% api-method-parameter name="fromCurrency" type="string" required=true %}
-Expects supported cryptocurrency such as \(BTC, ETH , XRP, etc.\). Supports multiple comma delimited values.
+Expects cryptocurrency such as \(BTC, ETH , XRP, etc.\). Supports multiple comma delimited values.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="toCurrency" type="string" required=true %}
-Expects supported fiat currency such as \(EUR, USD, GBP, etc.\). Supports multiple comma delimited values.
+Expects fiat currency such as \(EUR, USD, GBP, etc.\). Supports multiple comma delimited values.
 {% endapi-method-parameter %}
 {% endapi-method-query-parameters %}
 {% endapi-method-request %}
