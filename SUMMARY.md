@@ -31,5 +31,5 @@
 * [Currencies & Fees](references/currencies-and-fees/README.md)
   * [Get all currencies](references/currencies-and-fees/get-all-currencies.md)
   * [Get withdrawal \(on-chain\) fees & minimum withdrawal amounts](references/currencies-and-fees/get-withdrawal-on-chain-fees-and-minimum-withdrawal-amounts.md)
-  * [Get exchange rates \[single\]](references/currencies-and-fees/get-exchange-rates.md)
+  * [Get exchange rates \[crypto to fiat\]](references/currencies-and-fees/get-exchange-rates.md)
 

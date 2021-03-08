@@ -1,4 +1,4 @@
-# Get exchange rates \[single\]
+# Get exchange rates \[crypto to fiat\]
 
 {% api-method method="get" host="https://payments.finrax.com" path="/api/v1/exchange/rates/deposit" %}
 {% api-method-summary %}
