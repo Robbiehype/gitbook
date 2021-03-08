@@ -32,5 +32,4 @@
   * [Get all currencies](references/currencies-and-fees/get-all-currencies.md)
   * [Get withdrawal \(on-chain\) fees & minimum withdrawal amounts](references/currencies-and-fees/get-withdrawal-on-chain-fees-and-minimum-withdrawal-amounts.md)
   * [Get exchange rates \[single\]](references/currencies-and-fees/get-exchange-rates.md)
-  * [Get exchange rates \[multi\]](references/currencies-and-fees/get-exchange-rates-multi.md)
 
