@@ -24,7 +24,7 @@ Unique business identifier
 Cake successfully retrieved.
 {% endapi-method-response-example-description %}
 
-```
+```javascript
 {
     "businessId": "19dee3c4-4dc9-4bcc-b8ed-92e3d4f256bd",
     "businessName": "My Awesome Business",
