@@ -52,7 +52,7 @@ Payment data submitted successfully
     "paymentInfo": {
         "paymentRequestedAt": 1615388962,
         "actualDepositAmount": "0",
-        "redirectUrl": "https://exampleUrl.com/redirect/payment",
+        "redirectUrl": "https://exampleurl.com/redirect/payment",
         "depositCurrency": "BTC",
         "actualDisplayAmount": "0",
         "expirationMinutes": 30,
