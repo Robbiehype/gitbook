@@ -12,15 +12,18 @@ Initiate a payment request
 {% api-method-description %}
 An endpoint for initiating a crypto payment request. Upon success, a unique `paymentUrl`is provided in the response which can be served within an`iframe`.   
   
-Alternatively, you can redirect to the payment URL and if you have supplied a`redirectUrl` in the request, we will navigate the end-user back to your website upon payment completion \(when we have received a deposit against this payment request\). There is also a button which the end-user can use if they wish to get redirected back sooner.  
-  
+Alternatively, you can redirect to the payment URL and if you have supplied a`redirectUrl` in the request, we will navigate the end-user back to your website upon payment completion \(when we have received a deposit against this payment request\). There is also a button which the end-user can use if they wish to get redirected back sooner.
 {% endapi-method-description %}
 
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
+{% api-method-parameter name="type" type="string" required=false %}
+Can be one of \[ONE\_TIME, REUSABLE\]
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="rateType" type="string" required=false %}
-`FlOATING` or `FIXED`. Defaults to FIXED when conditions are met. 
+Can be one of \[FIXED, FLOATING\]. Defaults to FIXED when certain conditions are met. 
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="redirectUrl" type="string" required=false %}
@@ -90,6 +93,8 @@ Payment initiated successfully
 | paymentInfo | object | Object with payment details |
 | actualDepositAmount | string | The actual deposit amount in cryptocurrency |
 | actualDisplayAmount | string | The actual display amount upon receiving the cryptocurrency |
+| expectedDepositAmount | string | The expected amount in Cryptocurrency |
+| expectedDisplayAmount | string | The expected amount in Fiat currency |
 | businessId | string | Finrax business ID `UUID` |
 | clientPaymentId | string | Unique payment identifier provided in the request |
 | deposits | array | Array with all the transactions that happened for this payment |
@@ -100,6 +105,7 @@ Payment initiated successfully
 | status | string | Status of the payment |
 | processorType | string | Type of the payment. Can be one of \[BLOCKCHAIN, CARD\]. For crypto payments it's BLOCKCHAIN |
 | paymentUrl | string | A unique payment URL which could be used to serve the Finrax checkout page |
+| rateType | string | Can be one of \[FIXED, FLOATING\] |
 | redirectUrl | string | A specific URL the customer will be redirected to upon payment completion |
 | type | string | Can be one of \[ONE\_TIME, REUSABLE\] |
 
