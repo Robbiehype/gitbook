@@ -1,4 +1,4 @@
-# Get business deposits 🔒
+# 🔒 Get business deposits
 
 {% api-method method="get" host="https://payments.finrax.com" path="/api/v1/businesses/:id/payments" %}
 {% api-method-summary %}

@@ -1,4 +1,4 @@
-# Get business withdrawals 🔒
+# 🔒 Get business withdrawals
 
 {% api-method method="get" host="https://payments.finrax.com" path="/api/v1/businesses/withdrawals" %}
 {% api-method-summary %}

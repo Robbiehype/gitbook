@@ -1,4 +1,4 @@
-# Get business by ID 🔒
+# 🔒 Get business by ID
 
 {% api-method method="get" host="https://payments.finrax.com" path="/api/v1/businesses/:id" %}
 {% api-method-summary %}

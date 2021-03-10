@@ -1,4 +1,4 @@
-# Get business balance 🔒
+# 🔒 Get business balance
 
 {% api-method method="get" host="https://payments.finrax.com" path="/api/v1/businesses/:id/balance" %}
 {% api-method-summary %}
