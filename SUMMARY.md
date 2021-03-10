@@ -15,7 +15,7 @@
   * [🔒 Request crypto payment](references/crypto-payments/initiate-a-crypto-payment-request.md)
   * [🔒 Add payment details](references/crypto-payments/submit-deposit-data.md)
   * [🔒 Get payment data](references/crypto-payments/get-deposit-data.md)
-  * [🔒 Change paymen status](references/crypto-payments/change-deposit-status.md)
+  * [🔒 Change payment status](references/crypto-payments/change-deposit-status.md)
 * [Crypto withdrawals](references/payment-process/README.md)
   * [🔒 Request crypto withdrawal](references/payment-process/initiate-withdrawal-request.md)
 * [Wallet Addresses](references/crypto-addresses/README.md)
