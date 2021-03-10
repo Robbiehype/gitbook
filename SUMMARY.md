@@ -26,7 +26,7 @@
   * [🔒 Get business balance](references/business/get-business-balance.md)
 * [Callbacks](references/callbacks/README.md)
   * [Deposit received notification](references/callbacks/deposit-received.md)
-  * [Withdrawal broadcast time](references/callbacks/withdrawal-completed.md)
+  * [Withdrawal completed notification](references/callbacks/withdrawal-completed.md)
 * [Currencies & Fees](references/currencies-and-fees/README.md)
   * [Get all currencies](references/currencies-and-fees/get-all-currencies.md)
   * [Get withdrawal \(on-chain\) fees & minimum withdrawal amounts](references/currencies-and-fees/get-withdrawal-on-chain-fees-and-minimum-withdrawal-amounts.md)

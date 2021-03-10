@@ -1,4 +1,4 @@
-# Withdrawal broadcast time
+# Withdrawal completed notification
 
 Currently, we support 20+ cryptocurrencies as a payout option. Once you initiate a withdrawal we need to take care of a couple of things before we successfully broadcast it to the network. Withdrawals take on average 10 minutes to be broadcast on the designated blockchain network. Upon completion, you'll receive a callback notification.
 
