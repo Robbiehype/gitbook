@@ -122,5 +122,11 @@ Payment initiated successfully
 | redirectUrl | string | A specific URL the customer will be redirected to upon payment completion |
 | type | string | Can be one of \[ONE\_TIME, REUSABLE\] |
 
+{% hint style="info" %}
+More information regarding FIXED/FLOATING rate types [here](https://blog.finrax.com/guides/fixed-rates)
+{% endhint %}
 
+{% hint style="info" %}
+More information on ONE\_TIME/REUSABLE payment links [here](https://blog.finrax.com/guides/one-time-payments-vs.-recurring-payments)
+{% endhint %}
 
