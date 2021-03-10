@@ -65,20 +65,33 @@ Payment initiated successfully
 
 ```javascript
 {
-  "paymentInfo": {
-    "actualDepositAmount": "0",
-    "actualDisplayAmount": "0",
-    "businessId": "0268eba8-e240-4e83-b85e-d3c6c7bd9f20",
-    "clientPaymentId": "MyFirstPayment",
-    "deposits": [],
-    "expirationMinutes": 30,
-    "locale": "en-US",
-    "paymentId": "47922fda-0ccb-4070-8d79-09751d023a67",
-    "paymentInitiatedAt": 1566475846,
-    "status": "NEW",
-    "processorType": "BLOCKCHAIN"
-  },
-  "paymentUrl": "https://payments.finrax.com/deposit/47922fda-0ccb-4070-8d79-09751d023a67?theme=LIGHT&locale=en-US"
+    "paymentInfo": {
+        "paymentRequestedAt": null,
+        "actualDepositAmount": "0",
+        "redirectUrl": null,
+        "depositCurrency": null,
+        "actualDisplayAmount": "0",
+        "expirationMinutes": 30,
+        "paymentId": "25821749-f2d7-4189-9164-2e8018bbd85c",
+        "expectedUniformAmount": null,
+        "expectedDepositAmount": null,
+        "walletAddress": null,
+        "processorType": "BLOCKCHAIN",
+        "displayCurrency": "USD",
+        "actualUniformAmount": "0",
+        "locale": "en-US",
+        "businessId": "19dee3c4-4dc9-4bcc-b8ed-91e3d4f256bd",
+        "deposits": [],
+        "rateType": "FIXED",
+        "status": "NEW",
+        "expectedDisplayAmount": "100.00",
+        "destinationTag": null,
+        "ltc3Address": null,
+        "type": "ONE_TIME",
+        "paymentInitiatedAt": 1615384075,
+        "clientPaymentId": "test-example-1"
+    },
+    "paymentUrl": "https://dev-payments.finrax.com/deposit/25851749-f2d7-4189-9164-2e8018bbd85c?theme=LIGHT&locale=en-US&sessionToken=eyJhbGciOiJIUzUxMiJ9.eyJwYXltZW50SWQiOiIyNTg1MTc0OS1mMmQ3LTQxODktOTE2NC0yZTgwMThiYmQ4NWMiLCJvcmdhbmlzYXRpb25JZCI6ImNmMWU2N2QwLTQ2ZjYtNGEwMC04MzcwLTA5MGE1MDg3YzgwZiIsImJ1c2luZXNzSWQiOiIxOWRlZTNjNC00ZGM5LTRiY2MtYjhlZC05MmUzZDRmMjU2YmQiLCJpYXQiOjE2MTUzODQwNzUsImV4cCI6MTYxNTM4NzY3NX0.nx3fxBR1SDhrqEEroN4ACcHlPhjMreSh9ucEPRCB4fXS4X3pO8PNkdcIvoL6g_uThEBzCU_jT8w8tr0O9pSwig"
 }
 ```
 {% endapi-method-response-example %}
