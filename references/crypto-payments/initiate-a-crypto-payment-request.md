@@ -12,12 +12,17 @@ Initiate a payment request
 {% api-method-description %}
 An endpoint for initiating a crypto payment request. Upon success, a unique `paymentUrl`is provided in the response which can be served within an`iframe`.   
   
-Alternatively, you can redirect to the payment URL and if you have supplied a`redirectUrl` in the request, we will navigate the end-user back to your website upon payment completion \(when we have received a deposit against this payment request\). There is also a button which the end-user can use if they wish to get redirected back sooner.
+Alternatively, you can redirect to the payment URL and if you have supplied a`redirectUrl` in the request, we will navigate the end-user back to your website upon payment completion \(when we have received a deposit against this payment request\). There is also a button which the end-user can use if they wish to get redirected back sooner.  
+  
 {% endapi-method-description %}
 
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
+{% api-method-parameter name="rateType" type="string" required=false %}
+`FlOATING` or `FIXED`. Defaults to FIXED when conditions are met. 
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="redirectUrl" type="string" required=false %}
 Redirect a customer back to a specific URL upon payment completion. 
 {% endapi-method-parameter %}
