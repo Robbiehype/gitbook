@@ -14,6 +14,7 @@ Handling callbacks plays a significant role for smooth service operations. The p
 {% endhint %}
 
 {% hint style="info" %}
-For coins which have longer processing time, we have [instant deposit](https://blog.finrax.com/guides/instant-deposits) functionality. notifications on `depositReceivedCallbackUrl` endpoint. This allows the merchant to credit the deposit of the user, while transfer is still _confirming_ on the blockchain. 
+For coins which have longer processing time, we have [instant deposit](https://blog.finrax.com/guides/instant-deposits) functionality.   
+This allows the merchant to credit users' deposits, while transfers are still _confirming_ on the blockchain. 
 {% endhint %}
 
