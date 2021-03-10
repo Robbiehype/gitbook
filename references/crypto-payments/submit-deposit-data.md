@@ -49,24 +49,32 @@ Payment data submitted successfully
 
 ```javascript
 {
-  "paymentInfo": {
-    "actualDepositAmount": "0",
-    "actualDisplayAmount": "0",
-    "businessId": "0268eba8-e240-4e83-b85e-d3c6c7bd9f20",
-    "clientPaymentId": "DepositForUserX",
-    "depositCurrency": "BTC",
-    "deposits": [],
-    "displayCurrency": "USD",
-    "expectedDepositAmount": "0.00976816",
-    "expectedDisplayAmount": "100.00",
-    "expirationMinutes": 30,
-    "locale": "en-US",
-    "paymentId": "50f0bfb3-c23e-4518-ad8f-c813a32f4822",
-    "paymentInitiatedAt": 1566543952,
-    "paymentRequestedAt": 1566544011,
-    "status": "PENDING",
-    "walletAddress": "34m1CQ5yqyvtqsoNH2zKAwLw7GCFz8FJQA"
-  }
+    "paymentInfo": {
+        "paymentRequestedAt": 1615388962,
+        "actualDepositAmount": "0",
+        "redirectUrl": "https://exampleUrl.com/redirect/payment",
+        "depositCurrency": "BTC",
+        "actualDisplayAmount": "0",
+        "expirationMinutes": 30,
+        "paymentId": "35e24bc2-e2f4-42cd-9d59-1caa8a2b8c03",
+        "expectedUniformAmount": "50.00",
+        "expectedDepositAmount": "0.00106077",
+        "walletAddress": "3ACv7yzCTQR779gKCMycbTUb3yMyBSomqo",
+        "processorType": "BLOCKCHAIN",
+        "displayCurrency": "EUR",
+        "actualUniformAmount": "0",
+        "locale": "en-US",
+        "businessId": "19dee3c4-4dc9-4bcc-b8ed-92e3d4f256bd",
+        "deposits": [],
+        "rateType": "FLOATING",
+        "status": "PENDING",
+        "expectedDisplayAmount": "50.00",
+        "destinationTag": null,
+        "ltc3Address": null,
+        "type": "ONE_TIME",
+        "paymentInitiatedAt": 1615388890,
+        "clientPaymentId": "fl22s001213021008wc0203"
+    }
 }
 ```
 {% endapi-method-response-example %}
