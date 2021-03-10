@@ -132,6 +132,12 @@ Cake successfully retrieved.
 {% endapi-method-spec %}
 {% endapi-method %}
 
+{% hint style="info" %}
+Due to security reasons we don't return BusinessID as response from any API calls.  
+You can locate the BusinessID in your Finrax organisation account.  
+Click on Businesses &gt; Expand Business &gt; Top left corner.
+{% endhint %}
+
 ### Response schema
 
 | Parameter | Type | Description |
