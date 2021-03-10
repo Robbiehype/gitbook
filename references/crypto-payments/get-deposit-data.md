@@ -26,35 +26,42 @@ Successfully retrieved payment data
 
 ```javascript
 {
-  "actualDepositAmount": "10.33000000",
-  "actualDisplayAmount": "13.97",
-  "businessId": "0268eba8-e240-4e83-b85e-d3c6c7bd9f20",
-  "clientPaymentId": "My client pays me",
-  "depositCurrency": "OMG",
-  "deposits": [
-    {
-      "depositAmount": "10.33000000",
-      "depositCurrency": "OMG",
-      "depositReceivedAt": 1565729267,
-      "displayAmount": "13.97",
-      "displayCurrency": "USD",
-      "id": "4aacdaf5-765b-393e-90a1-d7d733bcf303",
-      "onChainFee": "0.00208376",
-      "toAddress": "0xccc59efda1440d80fbc46bbe0deb8c865e5a3720",
-      "transactionId": "0x306c553a45c871c2c3bfdcc9c8f38a2af3e5c726e5b47ccf3d185d5ed4fb9e68"
-    }
-  ],
-  "displayCurrency": "USD",
-  "expectedDepositAmount": "10.34202556",
-  "expectedDisplayAmount": "14.00",
-  "expirationMinutes": 30,
-  "locale": "en-US",
-  "paymentId": "580d2518-da24-43bb-a2d0-33e1179e604e",
-  "paymentInitiatedAt": 1565728934,
-  "paymentRequestedAt": 1565728989,
-  "status": "DEPOSITED",
-  "processorType": "BLOCKCHAIN",
-  "walletAddress": "0xccc59efda1440d80fbc46bbe0deb8c865e5a3720"
+    "paymentRequestedAt": 1613829422,
+    "actualDepositAmount": "0.00031876",
+    "redirectUrl": null,
+    "depositCurrency": "BTC",
+    "actualDisplayAmount": "15.00000000",
+    "expirationMinutes": 30,
+    "paymentId": "f72c452b-16e2-44ca-957e-884d6428858d",
+    "expectedUniformAmount": "15.00",
+    "expectedDepositAmount": "0.00031876",
+    "walletAddress": "35MQYqhKPUXVqGRrhW54o6wUKqhz1JLpyo",
+    "processorType": "BLOCKCHAIN",
+    "displayCurrency": "EUR",
+    "actualUniformAmount": null,
+    "locale": "en-US",
+    "businessId": "19dee3c4-4dc9-4bcc-b8ed-92e3d4f256bd",
+    "deposits": [
+        {
+            "depositAmount": "0.00031876",
+            "depositCurrency": "BTC",
+            "depositReceivedAt": 1613829769,
+            "displayAmount": "15.00000000",
+            "displayCurrency": "EUR",
+            "id": "38d5decb-48aa-3d61-80f2-a0e57907845d",
+            "onChainFee": "0.00409298",
+            "toAddress": "35MQYqhKPUXVqGRrhW54o6wUKqhz1JLpyo",
+            "transactionId": "98969ddd9fb6dd445cdf7f8a7569e76b4f6441d6fa3d3efe9973e4fb967e3bdc"
+        }
+    ],
+    "rateType": "FIXED",
+    "status": "DEPOSITED",
+    "expectedDisplayAmount": "15.00",
+    "destinationTag": null,
+    "ltc3Address": null,
+    "type": "ONE_TIME",
+    "paymentInitiatedAt": 1613829411,
+    "clientPaymentId": "20-02-2021-fixed-rate-payment-15-EUR"
 }
 ```
 {% endapi-method-response-example %}
