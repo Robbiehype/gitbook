@@ -24,7 +24,7 @@ ID of the business `UUID`
 Cake successfully retrieved.
 {% endapi-method-response-example-description %}
 
-```
+```javascript
 {
     "createdAt": 1565103182,
     "depositExchangedCallbackUrl": "https://crypto-only-usdt.free.beeceptor.com",
