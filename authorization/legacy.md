@@ -21,7 +21,7 @@ In order to start making requests to the API, you must first create a business i
 
 \*\*\*\*[**Submit deposit data**](../references/crypto-payments/submit-deposit-data.md)\*\*\*\*
 
-[**Initiate withdrawal request**](../references/payment-process/initiate-withdrawal-request.md)\*\*\*\*
+[**Initiate withdrawal request**](../references/crypto-withdrawals/initiate-withdrawal-request.md)\*\*\*\*
 
 \*\*\*\*[**Get deposit data**](../references/crypto-payments/get-deposit-data.md)\*\*\*\*
 
