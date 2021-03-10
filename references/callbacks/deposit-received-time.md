@@ -2,9 +2,9 @@
 
 Once the end-user sends funds from their wallet, transaction-specific events will be broadcasted on the blockchain. We listen for such blockchain events and will send them to you via an endpoint provided by you when creating your business through the [dashboard](http://dashboard.finrax.com/). 
 
-Based on our instant deposit threshold \(currently set at 2000 EUR\) an event will be sent to you as soon as we _see_ a new deposit transfer broadcasted on the designated wallet address. At this stage, the status of the transaction is still `UNCONFIRMED` We run an internal probabilistic algorithm to help us identify [double spent attempts](https://coinsutra.com/bitcoin-double-spending/) or illicit transactions. If we detect such a case we won't propagate this event to you systemically and will instead contact you about it. Note that only UTXO-based coins \(BTC, LTC, BCH etc..\) have such an event, whereas account-based coins \(ETH, ERC20, XLM, XRP\) don't.
+Based on our [instant deposit ](https://blog.finrax.com/guides/instant-deposits)feature an event will be sent to you as soon as we _see_ a new deposit transfer broadcasted on the designated wallet address. At this stage, the status of the transaction is still `UNCONFIRMED` We run an internal probabilistic algorithm to help us identify [double spent attempts](https://coinsutra.com/bitcoin-double-spending/) or illicit transactions. If we detect such a case we won't propagate this event to you systemically and will instead contact you about it. Note that only UTXO-based coins \(BTC, LTC, BCH etc..\) have such an event, whereas account-based coins \(ETH, ERC20, XLM, XRP\) don't.
 
-If the deposit is above our instant deposit threshold \(above 2000 EUR\) a notification will be sent once the transaction is added in a block and there is 1 blockchain confirmation.
+If the deposit doesn't meet our [instant deposit](https://blog.finrax.com/guides/instant-deposits) conditions a notification will be sent once the transaction is added in a block and there is 1 blockchain confirmation.
 
 > This callback notification is sent on your `depositReceivedCallbackUrl` endpoint.
 
