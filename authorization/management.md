@@ -6,7 +6,7 @@ description: 'How to create, edit and update API secret/key pairs'
 
 API credentials can be managed directly from the [Finrax Dashboard](https://dashboard.finrax.com) by users with the [Manager or Admin roles](https://blog.finrax.com/guides/user-roles-and-permissions). To create API credentials go to **"Settings -&gt; API keys"** and click on the **“New Key”** button. Here you can provide a name \(alias\) for the key/secret pair and select the permissions that are relevant to your use-case.  
   
-Due to security concerns, we also require IPs to be whitelisted. If we receive a request from an IP that was not listed for the API pair, we will reject it returning a 401 \(Unauthorized\) HTTP status code.  
+Due to security concerns, we also require IPs to be whitelisted. If we receive a request from an IP that was not listed for the API pair, we will reject it returning a 403 \(Forbidden\) HTTP status code.  
 
 
 ![](../.gitbook/assets/api-keys-creation.gif)
