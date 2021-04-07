@@ -18,6 +18,14 @@ Alternatively, you can redirect to the payment URL and if you have supplied a`re
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
+{% api-method-parameter name="depositAmount" type="string" required=false %}
+Request amount in cryptocurrency that should be deposited \(i.e. 0.55 BTC\).
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="depositCurrency" type="string" required=false %}
+Cryptocurrency that should be used for the deposit. **Required** if `depositAmount` is supplied.
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="type" type="string" required=false %}
 Can be one of \[ONE\_TIME, REUSABLE\]
 {% endapi-method-parameter %}
@@ -34,17 +42,16 @@ Redirect a customer back to a specific URL upon payment completion.
 **UUID** Unique business identifier. Optional for businessToken implementation
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="expirationMinutes" type="number" required=false %}
+{% api-method-parameter name="expirationMinutes" type="integer" required=false %}
 Indicates the timeframe in which the deposit should happen. A value of `0` will make the payment to not expire. Defaults to `30min`
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="displayCurrency" type="string" required=false %}
-Fiat currency code that is supported in the business  
-`EUR, USD, TRY, GBP, etc.`
+Fiat currency abbreviation \(i.e. EUR, USD, GBP\). **Required** if `depositAmount` is supplied.
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="displayAmount" type="number" required=false %}
-Amount in `displayCurrency`the user wants to deposit.
+{% api-method-parameter name="displayAmount" type="string" required=false %}
+Amount in `displayCurrency`the user wants to deposit \(i.e. 100 USD\). One of **`depositAmount`** or **`displayAmount`** should be supplied.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="locale" type="string" required=true %}
