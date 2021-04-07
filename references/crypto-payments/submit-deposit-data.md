@@ -27,7 +27,7 @@ Unique payment identifier provided as a response of POST `/payments`
 {% endapi-method-path-parameters %}
 
 {% api-method-body-parameters %}
-{% api-method-parameter name="depositCurrency" type="string" required=true %}
+{% api-method-parameter name="depositCurrency" type="string" required=false %}
 Cryptocurrency that should be used for the deposit
 {% endapi-method-parameter %}
 
