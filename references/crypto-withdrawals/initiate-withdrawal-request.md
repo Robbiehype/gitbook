@@ -13,7 +13,7 @@ An endpoint for initiating cryptocurrency withdrawals. The amount can be selecte
 {% api-method-request %}
 {% api-method-body-parameters %}
 {% api-method-parameter name="withdrawalAccount" type="string" required=false %}
-Which account holdings to be used to satisfy the withdrawal request \(Could be `FIAT` or `CRYPTO`\)
+Which account holdings to be used to satisfy the withdrawal request \(Could be `FIAT` or `CRYPTO`\). Defaults to `CRYPTO`.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="businessId" type="string" required=true %}
@@ -89,7 +89,7 @@ The `targetAmountPolicy`field provides the means for specifying the withdrawal a
 ### What is withdrawalAccount?
 
 The withdrawalAccount field specifies from which holdings we should execute the withdrawal request. Please refer to [settlement allocation ratio](https://blog.finrax.com/guides/fiat-and-crypto-balance) for further information.  
-For example if you currently have 5000 EUR and 5000 USDT in your Finrax business with the `withdrawalAccount` you can specify if we should deduct your EUR account or USDT account to satisfy the withdrawal request in Crypto.
+For example if you currently have 5000 EUR and 5000 USDT in your Finrax business with the `withdrawalAccount` you can specify if we should deduct your EUR account or USDT account to satisfy the withdrawal request in Crypto. If not specified we will default and deduct your USDT account.
 {% endhint %}
 
 ### 
