@@ -13,7 +13,7 @@ An endpoint for initiating cryptocurrency withdrawals. The amount can be selecte
 {% api-method-request %}
 {% api-method-body-parameters %}
 {% api-method-parameter name="withdrawalAccount" type="string" required=false %}
-Which account holdings to be used to satisfy the withdrawal request \(Could be `FIAT` or `CRYPTO`\). Defaults to `CRYPTO`.
+Which account holdings to be used to satisfy the withdrawal request \(Could be `FIAT` or `CRYPTO`\). Please use `FIAT`.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="businessId" type="string" required=true %}
