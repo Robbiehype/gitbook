@@ -12,7 +12,14 @@ Bear in mind that we don't cover on-chain fees for withdrawals. Please make sure
 The on-chain fees are deducted from the selected amount in the withdrawal request i.e. if you wish to withdraw 1 Litecoin,  the recipient will receive 1 Litecoin minus the associated on-chain fee. List of current on-chain fees [here](https://finrax.com/onchain-fees).
 {% endhint %}
 
+### Withdrawal statuses
 
+| Status | Description |
+| :--- | :--- |
+| NEW | We've received your Withdrawal request and it has passed our initial validations. |
+| PENDING | The withdrawal request has passed the required steps i.e. we've bought the requested cryptocurrency and have deducted your balance. The transaction is to be broadcast on the blockchain network. |
+| COMPLETED | The blockchain transaction has been validated on the blockchain, thus the recipient should have access to the funds. A [callback notification](../callbacks/) will be send to your designated endpoint. |
+| FAILED | The withdrawal request has failed. We'll trigger a callback notification with failure status and description. |
 
 
 
