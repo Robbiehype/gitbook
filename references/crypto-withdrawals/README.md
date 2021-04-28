@@ -18,8 +18,8 @@ The on-chain fees are deducted from the selected amount in the withdrawal reques
 | :--- | :--- |
 | NEW | We've received your Withdrawal request and it has passed our initial validations. |
 | PENDING | The withdrawal request has passed the required steps i.e. we've bought the requested cryptocurrency and have deducted your balance. The transaction is to be broadcast on the blockchain network. |
-| COMPLETED | The blockchain transaction has been validated on the blockchain, thus the recipient should have access to the funds. A [callback notification](../callbacks/) will be send to your designated endpoint. |
-| FAILED | The withdrawal request has failed. We'll trigger a callback notification with failure status and description. |
+| COMPLETED | The blockchain transaction has been validated on the blockchain, thus the recipient should have access to the funds. A [callback notification](../callbacks/) will be sent to your designated endpoint. |
+| FAILED | The withdrawal request has failed. We'll trigger a callback notification with a failure status and description. |
 
 
 
