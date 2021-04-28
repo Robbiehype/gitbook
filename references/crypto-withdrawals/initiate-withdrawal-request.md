@@ -88,8 +88,8 @@ The `targetAmountPolicy`field provides the means for specifying the withdrawal a
 {% hint style="info" %}
 ### What is withdrawalAccount?
 
-The withdrawalAccount field specifies from which holdings we should execute the withdrawal request. Please refer to [settlement allocation ratio](https://blog.finrax.com/guides/fiat-and-crypto-balance) for further information.  
-For example if you currently have 5000 EUR and 5000 USDT in your Finrax business with the `withdrawalAccount` you can specify if we should deduct your EUR account or USDT account to satisfy the withdrawal request in Crypto. If not specified we will default and deduct your USDT account.
+The withdrawalAccount field specifies from which account holdings we should execute the withdrawal request. Please refer to [settlement allocation ratio](https://blog.finrax.com/guides/fiat-and-crypto-balance) for further information.  
+For example if you currently have 5000 EUR and 5000 USDT in your Finrax business with the `withdrawalAccount` you can specify if we should deduct your EUR account or USDT account to satisfy the withdrawal request. If not specified we will default and deduct your USDT account.
 {% endhint %}
 
 ### 
