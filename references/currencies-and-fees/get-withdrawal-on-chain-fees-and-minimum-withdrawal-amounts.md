@@ -249,5 +249,13 @@ Withdrawal fees fetched successfully
 {% endapi-method-spec %}
 {% endapi-method %}
 
-
+| Parameter | Type | Description |
+| :--- | :--- | :--- |
+| withdrawFee | string | The fee amount in the withdrawal currency i.e. Bitcoin. |
+| displayWithdrawFee | string | The fee amount in display/denomination currency i.e. EUR, USD, GBP. |
+| mininumWithdrawableAmount | string | The minimum withdrawal amount in the selected cryptocurrency. |
+| displayMinimumWithdrawableAmount | string | The minimum withdrawal amount in display/denomination currency. |
+| withdrawCurrency | string | The cryptocurrency that will be used for withdrawal. |
+| withdrawAvailable | boolean | Is currency available for withdrawal  |
+| withdrawPrecision | integer | Blockchain precision of the cryptocurrency |
 
