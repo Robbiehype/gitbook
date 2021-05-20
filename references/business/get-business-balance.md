@@ -1,6 +1,6 @@
 # 🔒 Get business balance
 
-{% api-method method="get" host="https://payments.finrax.com" path="/api/v1/businesses/:id/balance" %}
+{% api-method method="get" host="https://payments.finrax.com" path="/api/v1/balances/:id" %}
 {% api-method-summary %}
 Get business balance
 {% endapi-method-summary %}
