@@ -43,7 +43,8 @@ Redirect a customer back to a specific URL upon payment completion.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="expirationMinutes" type="integer" required=false %}
-Indicates the timeframe in which the deposit should happen. A value of `0` will make the payment to not expire. Defaults to `30min`
+`ONE_TIME` payments: Indicates the timeframe in which the deposit should happen. A value of `0` will make the payment expiry to 7 days. Defaults to 30 min.  
+`REUSABLE` payments: You can omit this parameter. Reusable payments are set to non-expiry.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="displayCurrency" type="string" required=false %}
