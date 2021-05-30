@@ -42,5 +42,29 @@ The networks of some coins like `XRP` and `XLM` are extremely fast. It takes lit
 On average a Bitcoin transaction to be included in a block requires ~15 minutes. By using Finrax you'll be able to credit Bitcoin deposits in less than 10 seconds.
 {% endhint %}
 
+### Schema
 
+| Parameter | Type | Description |
+| :--- | :--- | :--- |
+| actualDepositAmount | number | Actual amount deposited in cryptocurrency \(`depositCurrency`\) by the end-user. Can be different than the `expectedDepositAmount` |
+| actualDisplayAmount | number | Actual amount deposited in `displayCurrency` currency \(e.g.`EUR, USD, GBP, TRY etc..)`Can be different than `expectedDisplayAmoun` |
+| clientPaymentId | string | Unique payment identifier provided by the merchant in the request body of POST `/payments` |
+| depositCurrency | string | Cryptocurrency that has been deposited |
+| settlementAmount | number | Amount deposited in `settlementCurrency` |
+| settlementCurrency | string | The currency in which your account is credited \(can be either fiat or cryptocurrency\) |
+| depositId | string | Unique Finrax deposit identifier `UUID` |
+| onChainFee | number | Blockchain cost for this deposit paid by the end-user |
+| depositAddress | string | Your unique blockchain address supplied by Finrax where the deposit was received.  |
+| transactionId | string | Unique blockchain transaction ID of the deposit |
+| displayCurrency | string | The fiat currency chosen for display \(denomination\) purposes |
+| expectedDepositAmount | string | Amount in cryptocurrency to be deposited to fulfil the required amount in `displayCurrency` |
+| displayServiceFee | number | Finrax commission in `displayCurrency`for the concrete deposit |
+| settlementServiceFee | number | Finrax commission in `settlementCurrency`for the concrete deposit |
+| expectedDisplayAmount | number | Amount in `displayCurrency` requested for this payment |
+| expirationTime | number | Timeframe at which the payment link against which this deposit was received expires |
+| paymentId | string | Unique Finrax payment identifier `UUID` |
+| paymentReceivedAt | number | Timestamp when the payment was received `UNIX` |
+| paymentRequestedAt | number | Timestamp when the payment was requested `UNIX` |
+| status | string | Can be only CONFIRMED. |
+| rateType | string | Rate type of the deposit \(FIXED or FLOATING\). Depends on the payment rate type and the time frame within which the deposit was created by the end-user. [Fixed vs Floating rates](https://blog.finrax.com/guides/fixed-rates). |
 
