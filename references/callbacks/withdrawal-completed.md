@@ -42,3 +42,24 @@ Currently, we support 20+ cryptocurrencies as a payout option. Once you initiate
 
 
 
+### Schema
+
+| Parameter | Type | Description |
+| :--- | :--- | :--- |
+| status | number | One of`COMPLETED` or `FAILED` |
+| actualWithdrawAmount | number | Actual amount withdrawn in `withdrawCurrency`Can be different than `estimatedWithdrawAmount` |
+| actualDisplayAmount | number | Actual amount withdrawn in `displayCurrency` currency \(e.g.`EUR, USD, GBP, TRY etc..)`Can be different than `expectedDisplayAmount` |
+| clientWithdrawalId | string | Unique withdrawal identifier provided by the merchant in the request body of POST `/withdrawals` |
+| withdrawCurrency | string | Cryptocurrency to be withdrawn |
+| deducedSettlementCurrency | number | Amount debited from the merchant's balance in `settlementCurrency` |
+| settlementCurrency | string | The currency in which the merchant's account was debited because of the withdrawal \(can be either fiat or cryptocurrency\) |
+| displayFee | number | Blockchain cost for this withdrawal in `displayCurrency` |
+| withdrawFee | number | Blockchain cost for this withdrawal in `withdrawCurrency` |
+| toTxAddress | string | The address to which the `actualWithdrawAmount`was sent |
+| transactionId | string | Unique blockchain transaction ID of the withdrawal |
+| displayCurrency | string | The fiat currency chosen for display \(denomination\) purposes |
+| expectedDisplayAmount | number | Amount in `displayCurrency` requested for this payment |
+| estimatedWithdrawAmount | number | Estimated amount for this withdrawal. Can be different than `actualWithdrawAmount` |
+| withdrawalId | string | Unique Finrax withdrawal identifier `UUID` |
+| businessId | string | Unique Finrax business identifier `UUID` |
+

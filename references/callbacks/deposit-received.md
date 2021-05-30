@@ -51,7 +51,7 @@ On average a Bitcoin transaction to be included in a block requires ~15 minutes.
 | clientPaymentId | string | Unique payment identifier provided by the merchant in the request body of POST `/payments` |
 | depositCurrency | string | Cryptocurrency that has been deposited |
 | settlementAmount | number | Amount deposited in `settlementCurrency` |
-| settlementCurrency | string | The currency in which your account is credited \(can be either fiat or cryptocurrency\) |
+| settlementCurrency | string | The currency in which the merchant's account is credited because of the deposit \(can be either fiat or cryptocurrency\) |
 | depositId | string | Unique Finrax deposit identifier `UUID` |
 | onChainFee | number | Blockchain cost for this deposit paid by the end-user |
 | depositAddress | string | Your unique blockchain address supplied by Finrax where the deposit was received.  |
