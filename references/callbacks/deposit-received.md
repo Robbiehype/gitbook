@@ -47,7 +47,7 @@ On average a Bitcoin transaction to be included in a block requires ~15 minutes.
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
 | actualDepositAmount | number | Actual amount deposited in cryptocurrency \(`depositCurrency`\) by the end-user. Can be different than the `expectedDepositAmount` |
-| actualDisplayAmount | number | Actual amount deposited in `displayCurrency` currency \(e.g.`EUR, USD, GBP, TRY etc..)`Can be different than `expectedDisplayAmoun` |
+| actualDisplayAmount | number | Actual amount deposited in `displayCurrency` currency \(e.g.`EUR, USD, GBP, TRY etc..)`Can be different than `expectedDisplayAmount` |
 | clientPaymentId | string | Unique payment identifier provided by the merchant in the request body of POST `/payments` |
 | depositCurrency | string | Cryptocurrency that has been deposited |
 | settlementAmount | number | Amount deposited in `settlementCurrency` |
