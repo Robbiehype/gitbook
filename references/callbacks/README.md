@@ -25,7 +25,7 @@ The procedure for verifying a signature is as follows:
   
 Here's an example snippet in JS:
 
-```text
+```javascript
 const crypto = require("crypto");
 const signature = ...;
 const publicKey = ...;
