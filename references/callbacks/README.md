@@ -9,6 +9,8 @@ Finrax sends 2 types of callback notifications on your predefined endpoints that
 
 ![](../../.gitbook/assets/callbacks-timeline.png)
 
+### Signature
+
 Finrax sends every callback notification with Signature and Timestamp components in the request headers. This allows you to verify that each notification was sent by Finrax, and not by a third party.
 
 Finrax generates signatures using RSA with SHA-512 and encodes the result with BASE64. The following function generates the signature: `Base64(RSA(PRIVATE_KEY, SHA512(requestBody.timestamp)))` Finrax uses a unique private key for each environment, so please note to use the correct public key for Sandbox and Production, for more information please visit [Environments](../../environments.md).
