@@ -9,6 +9,36 @@ Finrax sends 2 types of callback notifications on your predefined endpoints that
 
 ![](../../.gitbook/assets/callbacks-timeline.png)
 
+Finrax sends every callback notification with Signature and Timestamp components in the request headers. This allows you to verify that each notification was sent by Finrax, and not by a third party.
+
+Finrax generates signatures using RSA with SHA-512 and encodes the result with BASE64. The following function generates the signature: `Base64(RSA(PRIVATE_KEY, SHA512(requestBody.timestamp)))` Finrax uses a unique private key for each environment, so please note to use the correct public key for Sandbox and Production, for more information please visit [Environments](../../environments.md).
+
+The procedure for verifying a signature is as follows:
+
+**Step 1**. Extract the values from the Signature and Timestamp headers.
+
+**Step 2.** Prepare the payload string by concatenating the actual JSON payload \(i.e., the request body\), the character \`.\`, and the timestamp.
+
+**Step 3**. Using the appropriate public key and your favorite cryptography library, you can ensure that the signatures match.  
+  
+Here's an example snippet in JS:
+
+```text
+const crypto = require("crypto");
+const signature = ...;
+const publicKey = ...;
+const requestBody = ...;
+const timestamp = ...;
+const signaturePayload = `${requestBody}.${timestamp}`;
+const verifier = crypto.createVerify('RSA-SHA512');
+verifier.write(signaturePayload);
+verifier.end();
+const isVerified = verifier.verify(publicKey, signature, "base64");
+console.log("Verified:", isVerified);
+```
+
+
+
 {% hint style="success" %}
 Handling callbacks plays a significant role for smooth service operations. The purpose is to allow easy, fast and automated reconciliation with your systems to properly assign Deposits and Withdrawals of your users.  
 {% endhint %}
