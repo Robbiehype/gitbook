@@ -10,7 +10,7 @@
   ```
 
 * Production environment: **https://payments.finrax.com**  
-  Key for checking the authenticity of a Finrax [callback](references/callbacks/): 
+  Key for checking the authenticity of a Finrax [callback](references/callbacks/) on the production environment: 
 
   ```text
   MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAugctje1SfC4AbVEvTjYqjOzZwkp4QdbWxhYMSekvDmtsLt2/oCE6eQnpOmLG6shZZ9YdQdD60mis3Q9j3a7YCtLNGWmr5WVaxAvxemZnNy76atH+GoGJaj19/ShMIXRDPj7AkEZfHyQylAVWNQ86LTAYz9uepiB9OUzypj1zLUalDTpzikUNNKyGYGH80UjMgwR9le9trHE7QwICvAZCPxeqq8tNSt3xYNINpVVOLjhNySbMLFJXMjz/lXtFSTbjpFiCf2/d1zEIXHQ2jlNtgHZfl/1agWG8XGKUg2RODkJ1YdDx04a4qK3ee3mYa6zj+eg52xscS0nZTjkMwA+/SE/fnV/efsS6/c+THfCMdLIRTjutQsW05rygMKvpdcBmJci7qvFV2hGDuUCiSYe/eejSFX1cCXRLJEAmTGGtUJOX0gxT46UxMtBEQdTJ+dgWh2nErmJ4mzWxkKP/aHMieUeYK+BDknwTEZoRwFmFmslGGEEo1sXSPsOnlrMid5tH67FwaGA+9ngVyUabXFe0fXaAQrOE95Zepp5gPaeeXxC5tLnZkN6CtK4hAFesrV6WWD2jJyNICZHxYe5n19n6YtnuRYA/2fl2XXAiNOCk47YnUGbRsz81VzHc4VnLpkGy+RVKxk4gz+Tjkk12m/E8KVi+mPcpvdQlfZM5j9xDGpcCAwEAAQ==
