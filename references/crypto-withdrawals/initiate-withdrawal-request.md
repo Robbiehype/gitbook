@@ -73,7 +73,9 @@ Withdrawal request created successfully
 {% endapi-method-spec %}
 {% endapi-method %}
 
-
+{% hint style="success" %}
+Please check our Withdrawal experience playground to help you create your checkout experience: [https://finrax.com/withdrawal-experience-playground](https://finrax.com/withdrawal-experience-playground)
+{% endhint %}
 
 {% hint style="info" %}
 ### What is `targetAmountPolicy?`
