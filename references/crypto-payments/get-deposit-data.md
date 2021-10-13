@@ -7,7 +7,7 @@ Get payment details for a specific payment ID. Finrax payment ID is provided in 
 `/payments`
 {% endswagger-description %}
 
-{% swagger-parameter in="path" name="paymentId" type="integer" %}
+{% swagger-parameter in="path" name="paymentId" type="uuid" required="true" %}
 Unique Finrax payment ID
 {% endswagger-parameter %}
 
