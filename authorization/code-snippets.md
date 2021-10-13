@@ -121,4 +121,3 @@ function makeRequest(method, path, jsonBody = '') {
 ```
 {% endtab %}
 {% endtabs %}
-

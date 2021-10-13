@@ -1,57 +1,63 @@
 # 🔒 Get business withdrawals
 
-{% api-method method="get" host="https://payments.finrax.com" path="/api/v1/withdrawals" %}
-{% api-method-summary %}
-Get business withdrawals
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://payments.finrax.com" path="/api/v1/withdrawals" method="get" summary="Get business withdrawals" %}
+{% swagger-description %}
 Allows you to fetch all withdrawals for a business
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-query-parameters %}
-{% api-method-parameter name="businessId" type="string" required=true %}
-Unique business identifier `UUID`
-{% endapi-method-parameter %}
+{% swagger-parameter in="query" name="businessId" type="string" %}
+Unique business identifier 
 
-{% api-method-parameter name="limit" type="integer" required=false %}
-Results per request \(Default: 25\)
-{% endapi-method-parameter %}
+`UUID`
+{% endswagger-parameter %}
 
-{% api-method-parameter name="coins" type="array" required=false %}
-Filter by coins comma delimited `(BTC, ETH, XRP,...)`
-{% endapi-method-parameter %}
+{% swagger-parameter in="query" name="limit" type="integer" %}
+Results per request (Default: 25)
+{% endswagger-parameter %}
 
-{% api-method-parameter name="statuses" type="string" required=false %}
-Can be used to filter per status . Accepts `NEW`  `PENDING`  `COMPLETED`  `FAILED`
-{% endapi-method-parameter %}
+{% swagger-parameter in="query" name="coins" type="array" %}
+Filter by coins comma delimited 
 
-{% api-method-parameter name="clientWithdrawId" type="string" required=false %}
+`(BTC, ETH, XRP,...)`
+{% endswagger-parameter %}
+
+{% swagger-parameter in="query" name="statuses" type="string" %}
+Can be used to filter per status . Accepts 
+
+`NEW`
+
+  
+
+`PENDING`
+
+  
+
+`COMPLETED`
+
+  
+
+`FAILED`
+{% endswagger-parameter %}
+
+{% swagger-parameter in="query" name="clientWithdrawId" type="string" %}
 Payment identifier of the client
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="before" type="integer" required=false %}
+{% swagger-parameter in="query" name="before" type="integer" %}
 End date of the results
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="after" type="integer" required=false %}
+{% swagger-parameter in="query" name="after" type="integer" %}
 Start date of the results
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="sortBy" type="string" %}
-Sort withdrawals by `created`
-{% endapi-method-parameter %}
-{% endapi-method-query-parameters %}
-{% endapi-method-request %}
+{% swagger-parameter in="query" name="sortBy" type="string" %}
+Sort withdrawals by 
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Withdrawals fetched successfully
-{% endapi-method-response-example-description %}
+`created`
+{% endswagger-parameter %}
 
+{% swagger-response status="200" description="Withdrawals fetched successfully" %}
 ```javascript
 {
   "withdrawals": [
@@ -78,10 +84,8 @@ Withdrawals fetched successfully
   ]
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 #### Example: Fetch business withdrawals filtered by status COMPLETED and coin XRP
 
@@ -143,6 +147,4 @@ curl --location --request GET 'https://dev-payments.finrax.com/api/v1/withdrawal
 ```
 {% endtab %}
 {% endtabs %}
-
-
 

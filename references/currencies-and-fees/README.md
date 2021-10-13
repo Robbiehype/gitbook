@@ -5,13 +5,11 @@ Currently we support 20+ cryptocurrencies and 30+ fiat currencies for pairing. T
 In addition you will be able to fetch the most recent exchange rates for all cryptocurrencies paired with fiat currencies and all fiat exchange rates.
 
 {% hint style="info" %}
-For fiat exchange rates we use [https://openexchangerates.org/](https://openexchangerates.org/)   
+For fiat exchange rates we use [https://openexchangerates.org/](https://openexchangerates.org) \
 Fiat exchange rates are updated every 30 minutes.
 {% endhint %}
 
 {% hint style="info" %}
 Cryptocurrency exchange rates are real-time and are derived by our network of liquidity providers. We make sure to always get you the best exchange rate across our liquidity network.
 {% endhint %}
-
-
 

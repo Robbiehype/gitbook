@@ -1,23 +1,11 @@
 # Get all currencies
 
-{% api-method method="get" host="https://payments.finrax.com" path="/api/v1/currencies" %}
-{% api-method-summary %}
-Get all currencies
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://payments.finrax.com" path="/api/v1/currencies" method="get" summary="Get all currencies" %}
+{% swagger-description %}
 Allows you to list all supported currencies at Finrax
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Currencies fetched successfully
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="Currencies fetched successfully" %}
 ```javascript
 [
 {
@@ -446,12 +434,8 @@ Currencies fetched successfully
 }
 ]
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
-
+{% endswagger-response %}
+{% endswagger %}
 
 
 

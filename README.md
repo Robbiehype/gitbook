@@ -6,7 +6,7 @@ Finrax Payment Gateway is a solution that enables merchants to accept cryptocurr
 
 [HTTP response status codes](https://www.restapitutorial.com/httpstatuscodes.html) indicate whether a specific request has been successfully completed or resulted in a failure
 
-All timestamps are formatted in [UNIX](https://www.unixtimestamp.com/)
+All timestamps are formatted in [UNIX](https://www.unixtimestamp.com)
 
 {% hint style="warning" %}
 We've switched to a new Authorization schema, which allows better control and security around our REST API. It is backward compatible with the [Legacy](authorization/legacy.md) integrations, however, we highly advise you to switch over to the new Authorization mechanism. The businessToken will be deprecated soon.
@@ -15,4 +15,3 @@ If you require additional assistance around the API integration, please contact 
 
 Feel free to check the [code snippets ](authorization/code-snippets.md)for your convenience.
 {% endhint %}
-

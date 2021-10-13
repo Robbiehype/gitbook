@@ -1,34 +1,24 @@
-# Get exchange rates \[fiat to fiat\]
+# Get exchange rates \[fiat to fiat]
 
-{% api-method method="get" host="https://payments.finrax.com" path="/api/v1/exchange/rates/fiat" %}
-{% api-method-summary %}
-Get Exchange rates \[fiat to fiat\]
-{% endapi-method-summary %}
+{% swagger baseUrl="https://payments.finrax.com" path="/api/v1/exchange/rates/fiat" method="get" summary="Get Exchange rates [fiat to fiat]" %}
+{% swagger-description %}
+Get the most recent fiat exchange rates.
 
-{% api-method-description %}
-Get the most recent fiat exchange rates.  
+\
+
+
 Update time: every 30 minutes.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-query-parameters %}
-{% api-method-parameter name="fromCurrency" type="string" required=true %}
+{% swagger-parameter in="query" name="fromCurrency" type="string" %}
 Expects fiat currency as base. Supports multiple comma separated values.
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="toCurrency" type="string" required=true %}
+{% swagger-parameter in="query" name="toCurrency" type="string" %}
 Expects fiat currency as quote.Supports multiple comma separated values.
-{% endapi-method-parameter %}
-{% endapi-method-query-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-https://payments.finrax.com/api/v1/exchange/rates/fiat?fromCurrency=USD,EUR,GBP&toCurrency=USD,CHF
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="https://payments.finrax.com/api/v1/exchange/rates/fiat?fromCurrency=USD,EUR,GBP&toCurrency=USD,CHF" %}
 ```javascript
 {
 "USD": {
@@ -45,10 +35,6 @@ https://payments.finrax.com/api/v1/exchange/rates/fiat?fromCurrency=USD,EUR,GBP&
 }
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
-
+{% endswagger-response %}
+{% endswagger %}
 

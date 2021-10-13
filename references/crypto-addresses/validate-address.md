@@ -1,42 +1,34 @@
 # Validate address
 
-{% api-method method="post" host="https://payments.finrax.com" path="/api/v1/addresses/validate" %}
-{% api-method-summary %}
-Validate address
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://payments.finrax.com" path="/api/v1/addresses/validate" method="post" summary="Validate address" %}
+{% swagger-description %}
 An endpoint for checking if a wallet address is valid according to the coin-specific format.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-body-parameters %}
-{% api-method-parameter name="coin" type="string" required=true %}
-Coin abbreviation like `BTC`  `ETH`  `XRP`
-{% endapi-method-parameter %}
+{% swagger-parameter in="body" name="coin" type="string" %}
+Coin abbreviation like 
 
-{% api-method-parameter name="address" type="string" required=true %}
+`BTC`
+
+  
+
+`ETH`
+
+  
+
+`XRP`
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="address" type="string" %}
 Wallet address to be checked
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Returns if wallet is valid
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="Returns if wallet is valid" %}
 ```javascript
 {
   "isValid": true
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
-
+{% endswagger-response %}
+{% endswagger %}
 

@@ -1,68 +1,84 @@
 # 🔒 Get business deposits
 
-{% api-method method="get" host="https://payments.finrax.com" path="/api/v1/businesses/:id/payments" %}
-{% api-method-summary %}
-Get business deposits
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://payments.finrax.com" path="/api/v1/businesses/:id/payments" method="get" summary="Get business deposits" %}
+{% swagger-description %}
 Allows you to get all deposits per business ID
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="id" type="string" required=true %}
+{% swagger-parameter in="path" name="id" type="string" %}
 ID of the business
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
+{% endswagger-parameter %}
 
-{% api-method-query-parameters %}
-{% api-method-parameter name="coins" type="array" required=false %}
-List of coins comma delimited  `(BTC,ETH,XRP,...)`
-{% endapi-method-parameter %}
+{% swagger-parameter in="query" name="coins" type="array" %}
+List of coins comma delimited  
 
-{% api-method-parameter name="statuses" type="string" required=false %}
-Accepts the following  
-`NEW` `PENDING`  `DEPOSITED`  `AWAITING`  `EXPIRED`
-{% endapi-method-parameter %}
+`(BTC,ETH,XRP,...)`
+{% endswagger-parameter %}
 
-{% api-method-parameter name="paymentId" type="string" required=false %}
-Unique payment identifier `UUID`
-{% endapi-method-parameter %}
+{% swagger-parameter in="query" name="statuses" type="string" %}
+Accepts the following
 
-{% api-method-parameter name="clientPaymentId" type="string" required=false %}
+\
+
+
+
+
+`NEW`
+
+ 
+
+`PENDING`
+
+  
+
+`DEPOSITED`
+
+  
+
+`AWAITING`
+
+  
+
+`EXPIRED`
+{% endswagger-parameter %}
+
+{% swagger-parameter in="query" name="paymentId" type="string" %}
+Unique payment identifier 
+
+`UUID`
+{% endswagger-parameter %}
+
+{% swagger-parameter in="query" name="clientPaymentId" type="string" %}
 Payment ID provided by the client
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="descending" type="boolean" required=false %}
+{% swagger-parameter in="query" name="descending" type="boolean" %}
 Sort results in descending order
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="before" type="number" required=false %}
-End date of the report `UNIX`
-{% endapi-method-parameter %}
+{% swagger-parameter in="query" name="before" type="number" %}
+End date of the report 
 
-{% api-method-parameter name="after" type="number" required=false %}
-Start date of the report `UNIX`
-{% endapi-method-parameter %}
+`UNIX`
+{% endswagger-parameter %}
 
-{% api-method-parameter name="sortBy" type="string" required=true %}
-Sort payments by `status, created` 
-{% endapi-method-parameter %}
+{% swagger-parameter in="query" name="after" type="number" %}
+Start date of the report 
 
-{% api-method-parameter name="limit" type="integer" required=true %}
-Limit of the results per request \(max 2000\)
-{% endapi-method-parameter %}
-{% endapi-method-query-parameters %}
-{% endapi-method-request %}
+`UNIX`
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Deposits fetched successfully
-{% endapi-method-response-example-description %}
+{% swagger-parameter in="query" name="sortBy" type="string" %}
+Sort payments by 
 
+`status, created `
+{% endswagger-parameter %}
+
+{% swagger-parameter in="query" name="limit" type="integer" %}
+Limit of the results per request (max 2000)
+{% endswagger-parameter %}
+
+{% swagger-response status="200" description="Deposits fetched successfully" %}
 ```javascript
 {
     "payments": [
@@ -161,10 +177,8 @@ Deposits fetched successfully
     ]
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 #### Example: Fetch payments filtered by status DEPOSITED and coin BTC
 
@@ -278,4 +292,3 @@ curl --location --request GET 'https://payments.finrax.com/api/v1/businesses/{bu
 ```
 {% endtab %}
 {% endtabs %}
-

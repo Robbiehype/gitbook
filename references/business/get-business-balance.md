@@ -1,29 +1,15 @@
 # 🔒 Get business balance
 
-{% api-method method="get" host="https://payments.finrax.com" path="/api/v1/balances/:id" %}
-{% api-method-summary %}
-Get business balance
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://payments.finrax.com" path="/api/v1/balances/:id" method="get" summary="Get business balance" %}
+{% swagger-description %}
 Allows you to fetch the current business balance and allocation ratio of a given business.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="id" type="integer" required=true %}
+{% swagger-parameter in="path" name="id" type="integer" %}
 Unique business identifier
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Cake successfully retrieved.
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="Cake successfully retrieved." %}
 ```javascript
 {
     "businessId": "19dee3c4-4dc9-4bcc-b8ed-92e3d4f256bd",
@@ -38,10 +24,6 @@ Cake successfully retrieved.
     "displayCryptoAmount": "22452.50"
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
-
+{% endswagger-response %}
+{% endswagger %}
 

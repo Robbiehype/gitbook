@@ -1,35 +1,39 @@
-# Get withdrawal \(on-chain\) fees & minimum withdrawal amounts
+# Get withdrawal (on-chain) fees & minimum withdrawal amounts
 
-{% api-method method="get" host="https://payments.finrax.com" path="/api/v1/fees/withdraw/:coin" %}
-{% api-method-summary %}
-Get withdrawal \(on-chain\) fees & minimum withdrawal amounts
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://payments.finrax.com" path="/api/v1/fees/withdraw/:coin" method="get" summary="Get withdrawal (on-chain) fees & minimum withdrawal amounts" %}
+{% swagger-description %}
 Finrax does not cover the associated on-chain fees for crypto withdrawals. This endpoint allows you to get the current on-chain fees and minimum withdrawal amounts per coin. You can add a query param to display the fees and minimum amounts in fiat currency.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="coin" type="string" %}
-Coin abbreviation `BTC`  `ETH`  `XRP`
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
+{% swagger-parameter in="path" name="coin" type="string" %}
+Coin abbreviation 
 
-{% api-method-query-parameters %}
-{% api-method-parameter name="displayCurrency" type="string" %}
-Accepts all supported fiat currencies like `EUR`  `USD`  `GBP`
-{% endapi-method-parameter %}
-{% endapi-method-query-parameters %}
-{% endapi-method-request %}
+`BTC`
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Withdrawal fees fetched successfully
-{% endapi-method-response-example-description %}
+  
 
+`ETH`
+
+  
+
+`XRP`
+{% endswagger-parameter %}
+
+{% swagger-parameter in="query" name="displayCurrency" type="string" %}
+Accepts all supported fiat currencies like 
+
+`EUR`
+
+  
+
+`USD`
+
+  
+
+`GBP`
+{% endswagger-parameter %}
+
+{% swagger-response status="200" description="Withdrawal fees fetched successfully" %}
 ```javascript
 {
     "displayCurrency": "USD",
@@ -244,18 +248,15 @@ Withdrawal fees fetched successfully
     ]
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
-| Parameter | Type | Description |
-| :--- | :--- | :--- |
-| withdrawFee | string | The fee amount in the withdrawal currency i.e. Bitcoin. |
-| displayWithdrawFee | string | The fee amount in display/denomination currency i.e. EUR, USD, GBP. |
-| mininumWithdrawableAmount | string | The minimum withdrawal amount in the selected cryptocurrency. |
-| displayMinimumWithdrawableAmount | string | The minimum withdrawal amount in display/denomination currency. |
-| withdrawCurrency | string | The cryptocurrency that will be used for withdrawal. |
-| withdrawAvailable | boolean | Is currency available for withdrawal  |
-| withdrawPrecision | integer | Blockchain precision of the cryptocurrency |
-
+| Parameter                        | Type    | Description                                                         |
+| -------------------------------- | ------- | ------------------------------------------------------------------- |
+| withdrawFee                      | string  | The fee amount in the withdrawal currency i.e. Bitcoin.             |
+| displayWithdrawFee               | string  | The fee amount in display/denomination currency i.e. EUR, USD, GBP. |
+| mininumWithdrawableAmount        | string  | The minimum withdrawal amount in the selected cryptocurrency.       |
+| displayMinimumWithdrawableAmount | string  | The minimum withdrawal amount in display/denomination currency.     |
+| withdrawCurrency                 | string  | The cryptocurrency that will be used for withdrawal.                |
+| withdrawAvailable                | boolean | Is currency available for withdrawal                                |
+| withdrawPrecision                | integer | Blockchain precision of the cryptocurrency                          |
