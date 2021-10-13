@@ -112,7 +112,7 @@ the user wants to deposit (i.e. 100 USD). One of
  should be supplied.
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="locale" type="string" %}
+{% swagger-parameter in="body" name="locale" type="string" required="true" %}
 Language localisation 
 
 `en-US, de-DE, es-ES, fr-FR`
@@ -126,32 +126,26 @@ Unique payment identifier for reconciliation purposes.
 ```javascript
 {
     "paymentInfo": {
-        "paymentRequestedAt": null,
-        "actualDepositAmount": "0",
-        "redirectUrl": null,
-        "depositCurrency": null,
-        "actualDisplayAmount": "0",
+        "actualDepositAmount": "0.00000000",
+        "actualDisplayAmount": "0.00",
         "expirationMinutes": 30,
-        "paymentId": "25821749-f2d7-4189-9164-2e8018bbd85c",
-        "expectedUniformAmount": null,
-        "expectedDepositAmount": null,
-        "walletAddress": null,
+        "paymentId": "730ce768-441d-4cd6-81e2-65bd573097db",
         "processorType": "BLOCKCHAIN",
         "displayCurrency": "USD",
-        "actualUniformAmount": "0",
+        "actualUniformAmount": "0.00",
         "locale": "en-US",
-        "businessId": "19dee3c4-4dc9-4bcc-b8ed-91e3d4f256bd",
+        "businessId": "dab81a7a-2502-4784-ad34-87e04e5129f0",
         "deposits": [],
         "rateType": "FIXED",
         "status": "NEW",
         "expectedDisplayAmount": "100.00",
-        "destinationTag": null,
-        "ltc3Address": null,
         "type": "ONE_TIME",
-        "paymentInitiatedAt": 1615384075,
+        "refundFollowUpDepositsForOneTimePayments": true,
+        "overpaymentPolicy": "EXCESS_REFUND",
+        "paymentInitiatedAt": 1634141810,
         "clientPaymentId": "test-example-1"
     },
-    "paymentUrl": "https://dev-payments.finrax.com/deposit/25851749-f2d7-4189-9164-2e8018bbd85c?theme=LIGHT&locale=en-US&sessionToken=eyJhbGciOiJIUzUxMiJ9.eyJwYXltZW50SWQiOiIyNTg1MTc0OS1mMmQ3LTQxODktOTE2NC0yZTgwMThiYmQ4NWMiLCJvcmdhbmlzYXRpb25JZCI6ImNmMWU2N2QwLTQ2ZjYtNGEwMC04MzcwLTA5MGE1MDg3YzgwZiIsImJ1c2luZXNzSWQiOiIxOWRlZTNjNC00ZGM5LTRiY2MtYjhlZC05MmUzZDRmMjU2YmQiLCJpYXQiOjE2MTUzODQwNzUsImV4cCI6MTYxNTM4NzY3NX0.nx3fxBR1SDhrqEEroN4ACcHlPhjMreSh9ucEPRCB4fXS4X3pO8PNkdcIvoL6g_uThEBzCU_jT8w8tr0O9pSwig"
+    "paymentUrl": "https://dev-payments.finrax.com/deposit/730ce768-441d-4cd6-81e2-65bd573097db?theme=LIGHT&locale=en-US&sessionToken=eyJhbGciOiJIUzUxMiJ9.eyJwYXltZW50SWQiOiI3MzBjZTc2OC00NDFkLTRjZDYtODFlMi02NWJkNTczMDk3ZGIiLCJvcmdhbmlzYXRpb25JZCI6ImNmMWU2N2QwLTQ2ZjYtNGEwMC04MzcwLTA5MGE1MDg3YzgwZiIsImJ1c2luZXNzSWQiOiJkYWI4MWE3YS0yNTAyLTQ3ODQtYWQzNC04N2UwNGU1MTI5ZjAiLCJpYXQiOjE2MzQxNDE4MTAsImV4cCI6MTYzNDE0NTQxMH0.jC5sxGSMlsFeSbfhBrOUIxzHpWzu5CNrYuy-jIpNF7IflFNCQ81kwYQ6X0ToiKqQKOEaqazJj3QntrJpQcgnXQ"
 }
 ```
 {% endswagger-response %}

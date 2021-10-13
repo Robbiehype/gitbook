@@ -56,30 +56,29 @@ Amount in display currency the user wants to deposit, if not supplied in POST
 ```javascript
 {
     "paymentInfo": {
-        "paymentRequestedAt": 1615388962,
-        "actualDepositAmount": "0",
-        "redirectUrl": "https://exampleurl.com/redirect/payment",
+        "expectedUniformAmount": "100.00",
+        "expectedDepositAmount": "0.00205966",
+        "actualUniformAmount": "0.00",
+        "locale": "en-US",
+        "expectedDisplayAmount": "100.00",
+        "paymentInitiatedAt": 1634142279,
+        "paymentRequestedAt": 1634142316,
+        "actualDepositAmount": "0.00000000",
         "depositCurrency": "BTC",
-        "actualDisplayAmount": "0",
+        "actualDisplayAmount": "0.00",
         "expirationMinutes": 30,
-        "paymentId": "35e24bc2-e2f4-42cd-9d59-1caa8a2b8c03",
-        "expectedUniformAmount": "50.00",
-        "expectedDepositAmount": "0.00106077",
-        "walletAddress": "3ACv7yzCTQR779gKCMycbTUb3yMyBSomqo",
+        "paymentId": "5f6a3367-37b3-42cd-a870-8c74476961ac",
+        "walletAddress": "33nntiQTBoM9hKZtKiWCb2NHYQuPQYa9cr",
         "processorType": "BLOCKCHAIN",
         "displayCurrency": "EUR",
-        "actualUniformAmount": "0",
-        "locale": "en-US",
-        "businessId": "19dee3c4-4dc9-4bcc-b8ed-92e3d4f256bd",
+        "businessId": "dab81a7a-2502-4784-ad34-87e04e5129f0",
         "deposits": [],
         "rateType": "FLOATING",
         "status": "PENDING",
-        "expectedDisplayAmount": "50.00",
-        "destinationTag": null,
-        "ltc3Address": null,
+        "refundFollowUpDepositsForOneTimePayments": true,
         "type": "ONE_TIME",
-        "paymentInitiatedAt": 1615388890,
-        "clientPaymentId": "fl22s001213021008wc0203"
+        "overpaymentPolicy": "EXCESS_REFUND",
+        "clientPaymentId": "test_payment_1"
     }
 }
 ```

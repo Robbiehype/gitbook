@@ -5,7 +5,7 @@
 This endpoint allows you to get the business information
 {% endswagger-description %}
 
-{% swagger-parameter in="path" name="id" type="string" %}
+{% swagger-parameter in="path" name="id" type="string" required="true" %}
 ID of the business 
 
 `UUID`
@@ -14,77 +14,28 @@ ID of the business
 {% swagger-response status="200" description="Cake successfully retrieved." %}
 ```javascript
 {
-    "createdAt": 1565103182,
-    "depositExchangedCallbackUrl": "https://crypto-only-usdt.free.beeceptor.com",
-    "depositReceivedCallbackUrl": "https://crypto-only-usdt.free.beeceptor.com",
-    "id": "19dee3c4-4dc9-4bcc-b8ed-92e3d4f256bd",
-    "name": "Crypto Only USDT",
+    "createdAt": 1632734682,
+    "depositReceivedCallbackUrl": "https://example.com/deposits",
+    "id": "dab81a7a-2502-4784-ad34-87e04e5129f0",
+    "name": "My Business",
+    "overpaymentPolicy": "EXCESS_REFUND",
+    "refundFollowUpDepositsForOneTimePayments": true,
     "settlementCryptoCurrency": "USDT",
     "settlementCryptoRatio": "1.00",
     "settlementFiatCurrency": "EUR",
     "supportedDepositCurrencies": [
-        "BAT",
-        "DASH",
-        "KNC",
-        "ENJ",
         "XRP",
-        "BNT",
-        "FUN",
         "ETH",
-        "LINK",
-        "LRC",
-        "CVC",
         "LTC",
-        "REP",
-        "OMG",
-        "USDT",
-        "AION",
         "BTC",
-        "XLM",
-        "MITH",
-        "EOS",
-        "ZIL",
-        "MTL",
-        "BCH"
+        "XLM"
     ],
     "supportedDisplayCurrencies": [
-        "PLN",
-        "CAD",
-        "HKD",
-        "AUD",
-        "SEK",
-        "TRY",
-        "BRL",
-        "KRW",
-        "CZK",
-        "BGN",
-        "GBP",
-        "MXN",
-        "THB",
-        "ISK",
-        "SGD",
-        "CHF",
-        "INR",
-        "CNY",
-        "PHP",
-        "RON",
-        "DKK",
-        "JPY",
-        "HUF",
-        "MYR",
         "USD",
-        "RUB",
-        "NZD",
-        "IDR",
-        "EOS",
-        "ILS",
-        "NOK",
-        "EUR",
-        "ZAR",
-        "HRK"
+        "EUR"
     ],
     "theme": "LIGHT",
-    "withdrawalCallbackUrl": "https://crypto-only-usdt.free.beeceptor.com"
+    "withdrawalCallbackUrl": "https://example.com/withdrawals"
 }
 ```
 {% endswagger-response %}
